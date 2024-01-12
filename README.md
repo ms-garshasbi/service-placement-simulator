@@ -86,4 +86,4 @@ kubectl create -f server-side-dep.yaml
 kubectl create -f server-side-dep-ser.yaml
 ```
 
-By using 'minikube service list', you can observe the IP and Port of the pod running the server-side simulator. Utilize this IP and Port on the client-side configuration file.
+By using `minikube service list`, you can observe the IP and Port of the pod running the server-side simulator. Utilize this IP and Port on the client-side configuration file.
