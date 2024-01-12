@@ -33,7 +33,7 @@ node platform-simulator.js
 Make sure that the server-side simulator is run before the client-side simulator. The server-side simulator is executed using the following command:
 
 ```bash
-node main-executaion.js
+node main-execution.js
 ```
 ### Dockerize the simulator
 To dockerize the simulator, create a Dockerfile in each directory (both in the server-side and client-side) with the following contents:
