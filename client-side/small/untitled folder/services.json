@@ -1,0 +1,5357 @@
+[
+  {
+    "serviceID": 1,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.4531742051671155,
+              "memory": 4073.0981727971275,
+              "dataSize": 154.22900821415072,
+              "disk": 4.749416389532467,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.935038848583572
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3413.83755635392,
+              "dataSize": 120.10829675743749,
+              "disk": 4.783534508881344,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9930793684065118
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3224.541994213218,
+              "dataSize": 128.44024205283796,
+              "disk": 4.498124516062243,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9726607950947734
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4334.868317850674,
+              "dataSize": 106.62854266966143,
+              "disk": 4.436070482704608,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9868871747531559
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3454.06931294302,
+              "dataSize": 141.55062134922838,
+              "disk": 4.300768009506355,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9794671941192643
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.780410824388683,
+              "memory": 3341.883477343894,
+              "dataSize": 143.83636823382562,
+              "disk": 4.4229549327159265,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9255713047701845
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.8223263378236454,
+              "memory": 5255.558427291815,
+              "dataSize": 171.75452448156005,
+              "disk": 4.5504033390841325,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9813933131604707
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4683.616907804837,
+              "dataSize": 169.13837058216183,
+              "disk": 4.342781579632419,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9840277077513047
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.3264791097950837,
+              "memory": 5116.686126818717,
+              "dataSize": 175.75710335051792,
+              "disk": 4.129577363410964,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9979698797237074
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.43105900615623,
+              "memory": 3595.165733593352,
+              "dataSize": 159.62915218463667,
+              "disk": 4.07436982976944,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.915950135655164
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3079.5767769584145,
+              "dataSize": 123.20429057515838,
+              "disk": 4.472688989182613,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9804452781748538
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5136.887815055654,
+              "dataSize": 158.22928557221638,
+              "disk": 4.682812708257503,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9870141616480019
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5272.335940744155,
+              "dataSize": 172.99618417452328,
+              "disk": 4.114863187391964,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9924337836872575
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.4493955869417525,
+              "memory": 5386.19027001577,
+              "dataSize": 110.3281848147502,
+              "disk": 4.58685247227219,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9132111231560177
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.4531099136369123,
+              "memory": 4432.7207330903075,
+              "dataSize": 172.4678914061239,
+              "disk": 4.543451168155762,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9265390455560778
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.212359960214928,
+              "memory": 4527.580244440977,
+              "dataSize": 104.48211839563858,
+              "disk": 4.859603323978357,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9879958880420916
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.1224872414664167,
+              "memory": 3379.2523941370564,
+              "dataSize": 173.25909544001422,
+              "disk": 4.149229234685359,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9903248877933665
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.5745888858447925,
+              "memory": 4156.533623110619,
+              "dataSize": 114.61369712380865,
+              "disk": 4.295906284435336,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9589749910995168
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.951765111690088,
+              "memory": 4064.9968275780197,
+              "dataSize": 171.39205002954822,
+              "disk": 4.601841312281877,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.908688108470243
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.8841876940127973,
+              "memory": 4810.678409113725,
+              "dataSize": 136.0800169901799,
+              "disk": 4.510006285528618,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9492781032242114
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.098942565227123,
+              "memory": 3769.997240990397,
+              "dataSize": 146.64251665181504,
+              "disk": 4.135034223697687,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9986758740519729
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.4295638749690673,
+              "memory": 3049,
+              "dataSize": 164.99860824304187,
+              "disk": 4.239560046436815,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9199348259167097
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4154.102982392216,
+              "dataSize": 124.9669584040607,
+              "disk": 4.17135922550232,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9891824837272065
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.7225512943157408,
+              "memory": 4342.452962004157,
+              "dataSize": 159.61140908185502,
+              "disk": 4.605544501724301,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9917446923756693
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4674.914052192156,
+              "dataSize": 119.63943663588276,
+              "disk": 4.333415697345508,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9823647962444266
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 29,
+    "helperID": 21
+  },
+  {
+    "serviceID": 2,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.545368248615502,
+              "memory": 5546.006453822749,
+              "dataSize": 145.84991564949308,
+              "disk": 4.956182025511532,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9840340190921251
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.7827777641455778,
+              "memory": 3870.9466688008893,
+              "dataSize": 118.81128278765428,
+              "disk": 4.091518389582089,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9235459078239604
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.5336761850098943,
+              "memory": 3431.488010430798,
+              "dataSize": 172.62969823957897,
+              "disk": 4.395530462586095,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9067617586272819
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.595527944687954,
+              "memory": 3504.808444495495,
+              "dataSize": 120.47414566342196,
+              "disk": 4.991660481234069,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9471717591638175
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.53208026699525,
+              "memory": 3260.895612090428,
+              "dataSize": 173.9429890574288,
+              "disk": 4.063263581365694,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9435897869756004
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.4904370645465885,
+              "memory": 4003.906005025694,
+              "dataSize": 113.34825262382202,
+              "disk": 4.664988417551116,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9808604164029451
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.4088781097720706,
+              "memory": 4797.756586846275,
+              "dataSize": 140.66657289258944,
+              "disk": 4.894380548235392,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9113142300444645
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3836.384639289381,
+              "dataSize": 116.55684893487707,
+              "disk": 4.985239654167407,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9267348738952731
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.4789111000394843,
+              "memory": 4749.456325285059,
+              "dataSize": 120.469712492432,
+              "disk": 4.505604949815655,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9878937940173396
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.88170525764624,
+              "memory": 3095.841575645525,
+              "dataSize": 147.53750002093082,
+              "disk": 4.309695830650858,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.994500662399978
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3894.183701473907,
+              "dataSize": 177.17185111121626,
+              "disk": 4.45133107281373,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.986114453845517
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4099.992879925349,
+              "dataSize": 173.83010934307936,
+              "disk": 4.898913143879923,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9984821066939091
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4133.450179577798,
+              "dataSize": 173.58402763537046,
+              "disk": 4.165267983907617,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9254510161739764
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.9835265285190307,
+              "memory": 4044.4224729823827,
+              "dataSize": 124.15197720712008,
+              "disk": 4.421390192957057,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.941356281202569
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.693691128928013,
+              "memory": 5078.864179705841,
+              "dataSize": 96,
+              "disk": 4.93695650737946,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9914405541494564
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3353.433706911484,
+              "dataSize": 152.29141952881437,
+              "disk": 4.2156937020288545,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9476485579053315
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.5478821014812425,
+              "memory": 5181.58162394542,
+              "dataSize": 113.1897950977193,
+              "disk": 4.535353568111658,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9871039373345277
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.3827562672508131,
+              "memory": 4708.583017852606,
+              "dataSize": 177.87776263146185,
+              "disk": 4.770815742803322,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9043374903863441
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.4337947452128854,
+              "memory": 5110.628800521378,
+              "dataSize": 127.57986562204844,
+              "disk": 4.684443279486816,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9763405132449838
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4008.6440358964173,
+              "dataSize": 165.41830867793223,
+              "disk": 4.9287082327584395,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9211732691343305
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.7164090950890478,
+              "memory": 4301.915350438707,
+              "dataSize": 142.07976241661248,
+              "disk": 4.995836546773332,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9897766658527681
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4446.284253071799,
+              "dataSize": 166.8222663683767,
+              "disk": 4.170253672793535,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9016265848194261
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.210231428937522,
+              "memory": 3190.904024630865,
+              "dataSize": 163.6392731648242,
+              "disk": 4.079724265904814,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9864991929018359
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5190.095558097073,
+              "dataSize": 104.60814212014874,
+              "disk": 4.749132642424305,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9908823860509004
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3787.295418313188,
+              "dataSize": 143.9242173034856,
+              "disk": 4.245924862274901,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.933066672735716
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 30,
+    "helperID": 22
+  },
+  {
+    "serviceID": 3,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.4162408924177319,
+              "memory": 5592.786083417947,
+              "dataSize": 113.28354684780786,
+              "disk": 4.540341383246215,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.941702418969296
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.7725228994441777,
+              "memory": 4130.921694450734,
+              "dataSize": 145.85962680374683,
+              "disk": 4.611112126964679,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9947571078487936
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5590.641030727858,
+              "dataSize": 161.43737958028808,
+              "disk": 4.661546669386773,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9347323180461011
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4186.409142140488,
+              "dataSize": 148.96480263231365,
+              "disk": 4.48394651039901,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9898146325657782
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4494.3075458442245,
+              "dataSize": 96,
+              "disk": 4.737748181508252,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9883964312701321
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4815.413548198261,
+              "dataSize": 144.67296548039775,
+              "disk": 4.107402813839472,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9884994698330415
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.1695645819299294,
+              "memory": 3953.2731550823214,
+              "dataSize": 112.77510495179442,
+              "disk": 4.763789957242604,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9322656160555786
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3822.181535867421,
+              "dataSize": 170.213206141361,
+              "disk": 4.768035105851703,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9843213192716714
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5018.098484046488,
+              "dataSize": 107.84083571915934,
+              "disk": 4.737296347346056,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.98730183202232
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3590.0939635926775,
+              "dataSize": 177.85645581970383,
+              "disk": 4.621504593923577,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9892810226367108
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.152550599386024,
+              "memory": 5177.235231617775,
+              "dataSize": 139.9111448535331,
+              "disk": 4.732954419361857,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.939648974411595
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3254.156788892996,
+              "dataSize": 174.45306468351305,
+              "disk": 4.33315631868402,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9952743434679961
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.8071977151124052,
+              "memory": 4316.475199698987,
+              "dataSize": 121.36941412946611,
+              "disk": 4.293652956702028,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9830669601108517
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.1843233286564407,
+              "memory": 5285.013186962307,
+              "dataSize": 172.74599544230927,
+              "disk": 4.202240951558313,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9298152849295193
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.5260641648933087,
+              "memory": 5611.5962788954785,
+              "dataSize": 96,
+              "disk": 4.237762548340312,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9876386698650158
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5581.818038007583,
+              "dataSize": 105.75130751425684,
+              "disk": 4.302067204623455,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9887885687390032
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.4006118924326452,
+              "memory": 3456.7017630389887,
+              "dataSize": 127.10740925742212,
+              "disk": 4.933644872125467,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9958590642902145
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4696.138181552043,
+              "dataSize": 107.66240967889605,
+              "disk": 4.418584085236747,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9777283577180692
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.829933717140039,
+              "memory": 3721.664697769706,
+              "dataSize": 159.63688520303108,
+              "disk": 4.1470105731012845,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.987718370553855
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.0693309454287787,
+              "memory": 4070.239807720944,
+              "dataSize": 136.10951915351083,
+              "disk": 4.570981057743744,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9882257484856487
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.1168409418490755,
+              "memory": 3908.6326364819993,
+              "dataSize": 118.0453436394745,
+              "disk": 4.844049951831585,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9554759543087663
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5375.9753222666595,
+              "dataSize": 124.40945380540653,
+              "disk": 4.836306385011658,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9880389296433947
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.656247668320873,
+              "memory": 3653.1637818834442,
+              "dataSize": 132.55483300945772,
+              "disk": 4.428234081716386,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9852222379964607
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.533588538447392,
+              "memory": 3467.676486634326,
+              "dataSize": 122.60418720187717,
+              "disk": 4.246128251780883,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9946829688442593
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.1377987880626055,
+              "memory": 3602.6121356782237,
+              "dataSize": 136.6799267800174,
+              "disk": 4.02815497053987,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9842805962570715
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 31,
+    "helperID": 23
+  },
+  {
+    "serviceID": 4,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.784714004196331,
+              "memory": 4443.536062372277,
+              "dataSize": 140.95576870441505,
+              "disk": 4.375396763664311,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9897493979669254
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.1583471292447216,
+              "memory": 5409.288436562896,
+              "dataSize": 112.2352201881261,
+              "disk": 4.046053999092451,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9884730531038892
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.9504533424604937,
+              "memory": 4918.200532407694,
+              "dataSize": 125.64594092782696,
+              "disk": 4.69745121818176,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9962516443620991
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.3199959746600802,
+              "memory": 5278.658999344944,
+              "dataSize": 121.23359701330169,
+              "disk": 4.1953809240002595,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9576441029987017
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.6364464939440997,
+              "memory": 3990.291575355236,
+              "dataSize": 147.81621125836813,
+              "disk": 4.448549353413087,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9891699260787045
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.670934187428673,
+              "memory": 3711.949966736309,
+              "dataSize": 146.34226302559256,
+              "disk": 4.227416714422376,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9419679991603609
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.4861276357482254,
+              "memory": 5009.2481304673665,
+              "dataSize": 164.27499849266067,
+              "disk": 4.689432469944579,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9800291373928254
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5273.720303867566,
+              "dataSize": 102.96458828524523,
+              "disk": 4.743984170784606,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9845435943562945
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.576834223433126,
+              "memory": 5466.365675133795,
+              "dataSize": 144.03969260522257,
+              "disk": 4.9195139447231995,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9808608300948537
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5328.378951551856,
+              "dataSize": 152.57255013052554,
+              "disk": 4.41386282704555,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9943034167864581
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5024.624688259908,
+              "dataSize": 109.9769480035489,
+              "disk": 4.825127561935256,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9678842468916701
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.062793497497507,
+              "memory": 4843.43778377567,
+              "dataSize": 124.09151467074312,
+              "disk": 4.4034286662185655,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9399445675137533
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.935307140772971,
+              "memory": 5550.856665881141,
+              "dataSize": 167.97835664229274,
+              "disk": 4.769202108250607,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9966838225188496
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.001289805525663,
+              "memory": 3776.9433239633317,
+              "dataSize": 108.15245063467188,
+              "disk": 4.477644644153331,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9853566941164054
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.6675661223546543,
+              "memory": 4689.017043545576,
+              "dataSize": 135.45377885134673,
+              "disk": 4.624058962198436,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9888970063318312
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.2666528919701534,
+              "memory": 4711.289495683978,
+              "dataSize": 174.59171677923322,
+              "disk": 4.354476209921464,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9950200604980923
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4329.6269066069635,
+              "dataSize": 127.53127752190849,
+              "disk": 4.409264438300683,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9589366036035938
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.8478375392327355,
+              "memory": 4327.609894282038,
+              "dataSize": 148.134155370424,
+              "disk": 4.926430536524499,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9665436412230719
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4490.154339098719,
+              "dataSize": 174.80026419687908,
+              "disk": 4.694910800822613,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9177803372116684
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4219.001538328895,
+              "dataSize": 117.42260286594004,
+              "disk": 4.076489388830886,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9981115286906723
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3489.459562872305,
+              "dataSize": 134.20729121911927,
+              "disk": 4.197500441342168,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9548186948147674
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4017.243050818074,
+              "dataSize": 168.13526231972946,
+              "disk": 4.672862028660017,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9908153909340153
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5643.870448473138,
+              "dataSize": 108.40874123076867,
+              "disk": 4.904328671630349,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9724000907355735
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5555.564034237878,
+              "dataSize": 165.6707598419066,
+              "disk": 4.817249500617554,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9804455830202775
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.6587067202819763,
+              "memory": 4596.025303641823,
+              "dataSize": 144.3784370364745,
+              "disk": 4.639605357833954,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9563277095681464
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 32,
+    "helperID": 24
+  },
+  {
+    "serviceID": 5,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5476.189407582358,
+              "dataSize": 139.06507205227908,
+              "disk": 4.518953863608446,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9837157667684959
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3317.1679346792284,
+              "dataSize": 130.04316363462704,
+              "disk": 4.681851426988464,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9575683633636184
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3390.7310554929845,
+              "dataSize": 150.1077505580715,
+              "disk": 4.159711188859458,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9205074546775152
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4155.514417363425,
+              "dataSize": 141.40101507059546,
+              "disk": 4.478482764380004,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9372558514406732
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.0636072866473114,
+              "memory": 5008.825115761974,
+              "dataSize": 134.02142280899054,
+              "disk": 4.84460893836386,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9834446107751282
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.037552298483122,
+              "memory": 5531.508515992451,
+              "dataSize": 168.9353201836484,
+              "disk": 4.349306051511203,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9859120818987436
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.8134934284941964,
+              "memory": 4357.039985151374,
+              "dataSize": 103.07697302102028,
+              "disk": 4.843906162233045,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9661687825573007
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.2395513563651757,
+              "memory": 4451.461797055426,
+              "dataSize": 105.62956488070958,
+              "disk": 4.849543845378672,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9141098756388091
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.6208347619301686,
+              "memory": 4565.081582231835,
+              "dataSize": 142.7891909547285,
+              "disk": 4.454880003670551,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9850836002658916
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5365.56439027606,
+              "dataSize": 96,
+              "disk": 4.802540448057349,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9888390844740549
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.8579437806640393,
+              "memory": 3176.2334100528146,
+              "dataSize": 132.92233678923813,
+              "disk": 4.506635267878132,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9452603954706188
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.5671774081186207,
+              "memory": 5636.27940117823,
+              "dataSize": 135.11841820312924,
+              "disk": 4.4139146047024305,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9635906043476477
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3218.853322387807,
+              "dataSize": 114.82135553183338,
+              "disk": 4.446807802544937,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9249858554991962
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4824.306668931634,
+              "dataSize": 141.4253829789987,
+              "disk": 4.210428231300909,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9861157340737376
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.9328945481859727,
+              "memory": 4239.648817677901,
+              "dataSize": 150.40200901480688,
+              "disk": 4.228711685955897,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9828916062465812
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.5104890275682576,
+              "memory": 3824.4853413009264,
+              "dataSize": 103.82552310134417,
+              "disk": 4.60443491867795,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9895852367993336
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.8148173276843185,
+              "memory": 5559.6406486933065,
+              "dataSize": 131.99727502200304,
+              "disk": 4.747858188223837,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9859241197022989
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.5358000127238753,
+              "memory": 3177.2914464769883,
+              "dataSize": 175.87522220848956,
+              "disk": 4.612563419187002,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.984880279575319
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.8096211135740394,
+              "memory": 3431.820300162177,
+              "dataSize": 112.24065326545514,
+              "disk": 4.343176568675071,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9830827438541929
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.8584357632873685,
+              "memory": 3759.853140410374,
+              "dataSize": 145.44861224351655,
+              "disk": 4.937876411652265,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.980747092076592
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4845.3587112784835,
+              "dataSize": 116.74159760411014,
+              "disk": 4.13200568627156,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9985271619517102
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.981792773293153,
+              "memory": 4506.817258766507,
+              "dataSize": 120.74810587991846,
+              "disk": 4.880415081325421,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9091812712352364
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.4838261692120254,
+              "memory": 5574.416291512298,
+              "dataSize": 130.9258299009157,
+              "disk": 4.632737915383581,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9115298699728137
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.9247802777428165,
+              "memory": 4037.7355197515944,
+              "dataSize": 127.38666864786101,
+              "disk": 4.636793191748756,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9936760399460214
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.4708174656875386,
+              "memory": 4930.940807919123,
+              "dataSize": 164.44520877684602,
+              "disk": 4.871499735241317,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9829210997572885
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 33,
+    "helperID": 25
+  },
+  {
+    "serviceID": 6,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3727.998461171868,
+              "dataSize": 135.03976255224546,
+              "disk": 4.8848134212593335,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9866753508264048
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4942.832308659412,
+              "dataSize": 167.73450412506713,
+              "disk": 4.14934445936024,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9961991614286612
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.2924150533273093,
+              "memory": 3699.8482117994336,
+              "dataSize": 141.60774215950298,
+              "disk": 4.813242823391894,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9948470292852759
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4754.872022159747,
+              "dataSize": 115.12604003332277,
+              "disk": 4.713150641297556,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9968291316993378
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5607.4488475308235,
+              "dataSize": 133.19953174190664,
+              "disk": 4.436293733512418,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9984823369886883
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3911.887768353555,
+              "dataSize": 174.1313853454733,
+              "disk": 4.920959322531682,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9098166168194348
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.4755368319698507,
+              "memory": 3049,
+              "dataSize": 177.66828464851665,
+              "disk": 4.428604985367443,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9918243386925414
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.9071491525704727,
+              "memory": 4691.969638288412,
+              "dataSize": 109.7834605624764,
+              "disk": 4.137436858342975,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9813355697767352
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4341.770515397193,
+              "dataSize": 175.67730059306763,
+              "disk": 4.215925841005923,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9605922555240756
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.2050891391953775,
+              "memory": 4001.878196040601,
+              "dataSize": 155.43604454050188,
+              "disk": 4.281156417563357,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9925883949232447
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3684.0163528687385,
+              "dataSize": 126.66828501606817,
+              "disk": 4.313102080648838,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9535549844812699
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4248.793003472774,
+              "dataSize": 113.14436691321032,
+              "disk": 4.9149593228231945,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9908014048527795
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5377.798689934977,
+              "dataSize": 136.8987797467456,
+              "disk": 4.566275179266711,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9924247450728458
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.3163336670971346,
+              "memory": 3127.7321425937134,
+              "dataSize": 112.22449340953484,
+              "disk": 4.961803804754444,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9458398222176253
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.213738466372394,
+              "memory": 4466.631613344189,
+              "dataSize": 128.1730264529559,
+              "disk": 4.268068161113625,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.952874587747211
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4519.524058674476,
+              "dataSize": 102.7940545679106,
+              "disk": 4.111959452195968,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9478091351969767
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.2807253694798995,
+              "memory": 5025.380255866014,
+              "dataSize": 113.32662363190407,
+              "disk": 4.671473438292377,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9932615188649545
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3186.3291797897787,
+              "dataSize": 135.1385854554265,
+              "disk": 4.157872380124749,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9919300652133755
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.3933875771859885,
+              "memory": 3359.214424147115,
+              "dataSize": 108.87279138094465,
+              "disk": 4.8858877536157586,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9330754584870167
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.4529908989372755,
+              "memory": 4622.2990533754,
+              "dataSize": 154.28441116835216,
+              "disk": 4.859997891867513,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9966521093107708
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5324.95493185409,
+              "dataSize": 112.21420308694991,
+              "disk": 4.4562853058000425,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9843456916410739
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.332276017535865,
+              "memory": 3949.0950098617495,
+              "dataSize": 170.46326224711157,
+              "disk": 4.716639118326533,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9120072687125117
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.463753599223396,
+              "memory": 4791.411386349261,
+              "dataSize": 168.10498419382486,
+              "disk": 4.659388964841874,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9805108517269406
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.897537448109265,
+              "memory": 4224.722863936079,
+              "dataSize": 105.32328663095728,
+              "disk": 4.811365336920899,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9184154970807707
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.5414400773166022,
+              "memory": 3747.3040734127344,
+              "dataSize": 173.69041343495633,
+              "disk": 4.72897314411656,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9860930702589841
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 34,
+    "helperID": 26
+  },
+  {
+    "serviceID": 7,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5501.211786021427,
+              "dataSize": 161.84388571541456,
+              "disk": 4.773487121423552,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9856403150708142
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3070.8579995566097,
+              "dataSize": 172.33550696663298,
+              "disk": 4.146876884103049,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9742764051325331
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5343.620875884644,
+              "dataSize": 133.72125686836162,
+              "disk": 4.123203766621208,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9397070073534337
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4037.567640222411,
+              "dataSize": 116.60686923432927,
+              "disk": 4.119623989610197,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9800731922804252
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.2373086413443155,
+              "memory": 4309.777517503081,
+              "dataSize": 147.71016682585844,
+              "disk": 4.25852405106099,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9702681525309962
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4156.3917052005745,
+              "dataSize": 104.44948023297616,
+              "disk": 4.559343370282305,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9917654662028994
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3532.997576848497,
+              "dataSize": 139.281539400741,
+              "disk": 4.131807777227442,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9702437058647628
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3784.4515905676244,
+              "dataSize": 147.85409953352953,
+              "disk": 4.932933508714228,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9912910656977358
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.8839380094098819,
+              "memory": 3359.9174958538015,
+              "dataSize": 164.02034280580372,
+              "disk": 4.202254136640249,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9539164078918133
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3282.9284504267753,
+              "dataSize": 151.13065553748444,
+              "disk": 4.099711781429287,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.930678639914601
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.9023335935456704,
+              "memory": 4580.632839388931,
+              "dataSize": 138.12627027524337,
+              "disk": 4.214556621208952,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9069688424075621
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4017.9684622912564,
+              "dataSize": 148.37023041835536,
+              "disk": 4.437037871901636,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9192789767152129
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5610.690110482523,
+              "dataSize": 120.05824202079486,
+              "disk": 4.241346134757178,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9147386340340319
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3049,
+              "dataSize": 122.67153986416801,
+              "disk": 4.472485017610164,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9379099901199374
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.0342232874980155,
+              "memory": 3796.262100035555,
+              "dataSize": 172.25862081505966,
+              "disk": 4.542836935884283,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9369528424174177
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.7379088172783899,
+              "memory": 4811.597343756063,
+              "dataSize": 116.61616106203292,
+              "disk": 4.30929806348282,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.986858224303242
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5490.860560547533,
+              "dataSize": 108.87116477515444,
+              "disk": 4.457058216508319,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9834928096771027
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.7088427255753587,
+              "memory": 5657.633742743495,
+              "dataSize": 155.0973840066201,
+              "disk": 4.249641739843089,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.988059264099857
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.4646689391128969,
+              "memory": 4109.733286746605,
+              "dataSize": 133.6255509604914,
+              "disk": 4.205378168639931,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9957447062821795
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.1671928733485797,
+              "memory": 5641.544636532797,
+              "dataSize": 141.02641624141353,
+              "disk": 4.112076500414679,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9005141110153386
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5242.696498608244,
+              "dataSize": 145.6056178433867,
+              "disk": 4.9155027723985425,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9803884685288227
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.3311113313291845,
+              "memory": 4835.746463594487,
+              "dataSize": 133.98548994876057,
+              "disk": 4.595059792080802,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9471777648328393
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5235.898861101691,
+              "dataSize": 109.35812096581473,
+              "disk": 4.851032032366366,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9963793857705825
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3117.8273551082634,
+              "dataSize": 142.32568641859888,
+              "disk": 4.279458096711613,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9273190550110255
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.1613894434371916,
+              "memory": 3728.2291226606035,
+              "dataSize": 120.0450179328013,
+              "disk": 4.532317098842771,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9171801854623937
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 35,
+    "helperID": 27
+  },
+  {
+    "serviceID": 8,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.574696423474395,
+              "memory": 5054.832392731975,
+              "dataSize": 115.71444457840367,
+              "disk": 4.145110836420034,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9903789251506966
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.8550797680832214,
+              "memory": 4591.0675159402135,
+              "dataSize": 108.25160865695308,
+              "disk": 4.452952678168465,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9136099877201409
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3205.277283700385,
+              "dataSize": 156.89003244815987,
+              "disk": 4.188882815042769,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9131439444384665
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.6113654019374533,
+              "memory": 5147.964787291561,
+              "dataSize": 136.35651820889038,
+              "disk": 4.395744131442015,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9094562216094307
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3631.2600481768345,
+              "dataSize": 128.88961553917534,
+              "disk": 4.4818540770301905,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.989973962434006
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.4530475428420093,
+              "memory": 4467.85529650534,
+              "dataSize": 144.05677823586672,
+              "disk": 4.230786463000879,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9352820649579779
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.7325695007115463,
+              "memory": 4990.008651154684,
+              "dataSize": 158.34595372193274,
+              "disk": 4.397112478012463,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9263060853095183
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.046157079468119,
+              "memory": 4647.0792675654775,
+              "dataSize": 125.5997731294045,
+              "disk": 4.193506737584693,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9834583041721028
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5279.041452281124,
+              "dataSize": 160.0921807059388,
+              "disk": 4.687398786490793,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9963904409662342
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5450.222647125161,
+              "dataSize": 153.19896271997675,
+              "disk": 4.164759981619724,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9242723343185049
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.409428260511399,
+              "memory": 4624.991114775684,
+              "dataSize": 170.49068383440664,
+              "disk": 4.7704065723720195,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9469867771979439
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3987.115134039332,
+              "dataSize": 167.41818726793738,
+              "disk": 4.2995562381966135,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9899727428888484
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3674.750556108619,
+              "dataSize": 114.83761936153769,
+              "disk": 4.9014991150325,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9865184473411437
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3120.789476414309,
+              "dataSize": 163.6566523032837,
+              "disk": 4.998486170591423,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9934131547975948
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4260.609982670909,
+              "dataSize": 177.1248132526274,
+              "disk": 4.399795276012801,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9589172303311209
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.009399628301841,
+              "memory": 3123.0520391364153,
+              "dataSize": 153.58361523280746,
+              "disk": 4.315645454672962,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9882494854434762
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.711724538032406,
+              "memory": 4201.597413836875,
+              "dataSize": 144.20213639121863,
+              "disk": 4.85978219176499,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.985439991118074
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4818.389151685093,
+              "dataSize": 153.81161699856722,
+              "disk": 4.601095386778862,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.942880131125816
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.7762315867670666,
+              "memory": 4293.0686985247685,
+              "dataSize": 123.48358173909966,
+              "disk": 4.373857870603356,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9739890147722249
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.5374244591163078,
+              "memory": 5625.934815648425,
+              "dataSize": 162.06458119205718,
+              "disk": 4.621805621452067,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9881491380431131
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3798.3047022458777,
+              "dataSize": 156.81753441343,
+              "disk": 4.198433175573516,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9982595492267644
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.3153382466425776,
+              "memory": 4342.670455535335,
+              "dataSize": 126.22388419321217,
+              "disk": 4.071622645473479,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.900237553309582
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.7731151091029376,
+              "memory": 4077.585092707328,
+              "dataSize": 102.89878302899413,
+              "disk": 4.3045256699580055,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.939467444967
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5510.679061237557,
+              "dataSize": 110.12016940636182,
+              "disk": 4.383569118328095,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9450618679898698
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.203051201698841,
+              "memory": 5292.04337731763,
+              "dataSize": 175.01793396770648,
+              "disk": 4.7866588632374,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9830232375283867
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 36,
+    "helperID": 28
+  },
+  {
+    "serviceID": 9,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.8798528550266322,
+              "memory": 3942.7274788831646,
+              "dataSize": 123.6568767280051,
+              "disk": 4.257942182089412,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9849766475567161
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.023540571632425,
+              "memory": 5502.130004319177,
+              "dataSize": 104.08328640519764,
+              "disk": 4.315005049055374,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9594677845341493
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.2007245398201922,
+              "memory": 3947.8848724722598,
+              "dataSize": 130.89414313635848,
+              "disk": 4.917849844766408,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9758420011612965
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3135.8102606651123,
+              "dataSize": 109.74973920277841,
+              "disk": 4.603804383302914,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9792486391955126
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5214.402467336993,
+              "dataSize": 111.10650405503387,
+              "disk": 4.727547219921242,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9402470337687694
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5258.581909457828,
+              "dataSize": 168.29147160221441,
+              "disk": 4.576648758069613,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9448211976484832
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.355402390490247,
+              "memory": 4797.675769204823,
+              "dataSize": 156.10028172732783,
+              "disk": 4.7611237149514825,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9983362339355712
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.189775068170521,
+              "memory": 3438.1064829614375,
+              "dataSize": 151.52230368084128,
+              "disk": 4.81342907550896,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9749222543207232
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3984.258741820453,
+              "dataSize": 141.27298582439656,
+              "disk": 4.458323320491209,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9053814342080807
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5311.585617013921,
+              "dataSize": 144.60056358076582,
+              "disk": 4.579184535519871,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9853254583211524
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.6127024172051936,
+              "memory": 3465.521631554421,
+              "dataSize": 174.66898294552539,
+              "disk": 4.153256601083267,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9357843888719647
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.3449667833816465,
+              "memory": 5108.2383049948585,
+              "dataSize": 108.06050654687056,
+              "disk": 4.712043179512342,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9902053905225943
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.2463536518912197,
+              "memory": 5231.739937253335,
+              "dataSize": 161.392203398196,
+              "disk": 4.893584080202143,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9909093228290967
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.058010656395806,
+              "memory": 3293.7433893803995,
+              "dataSize": 148.02878836778427,
+              "disk": 4.614956424399253,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9117295603282928
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4974.0809928023555,
+              "dataSize": 102.80327652103838,
+              "disk": 4.475599031731209,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.988792198969719
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4232.2847926245995,
+              "dataSize": 98.3045938966765,
+              "disk": 4.643521958834132,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.983511812847056
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4704.386693279717,
+              "dataSize": 150.52226874870715,
+              "disk": 4.908941668752405,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9971925497153957
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5124.739412186616,
+              "dataSize": 167.50346617145686,
+              "disk": 4.789018464825027,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9113914256828389
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.915121025479515,
+              "memory": 5522.134951441023,
+              "dataSize": 108.88946058797941,
+              "disk": 4.333667613587727,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9860985198020249
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.454941969661766,
+              "memory": 3241.789633300689,
+              "dataSize": 162.8435042004814,
+              "disk": 4.203626671100121,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9879032208227019
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4844.653816525956,
+              "dataSize": 139.82305522469005,
+              "disk": 4.711871692945315,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9130926582803984
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3224.4085410068187,
+              "dataSize": 102.68960193926053,
+              "disk": 4.992027486884749,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9876566775824194
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.8412170358373143,
+              "memory": 4020.6538117834107,
+              "dataSize": 162.93339379164541,
+              "disk": 4.790143037084828,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9300904498456403
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3485.096150003207,
+              "dataSize": 127.73785853816159,
+              "disk": 4.715534150629297,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9919957527341555
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3082.7163204560547,
+              "dataSize": 164.09456012439196,
+              "disk": 4.687173786554246,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9805911403555165
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 37,
+    "helperID": 21
+  },
+  {
+    "serviceID": 10,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.597203119397768,
+              "memory": 3871.0522166697365,
+              "dataSize": 109.94760420564461,
+              "disk": 4.432892543788057,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9888028224324742
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4298.095850542616,
+              "dataSize": 146.05144228945286,
+              "disk": 4.588045174999561,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9096979254902086
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3940.745293404014,
+              "dataSize": 129.71896576808098,
+              "disk": 4.879692153723076,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9932455479494868
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.554236529839527,
+              "memory": 3466.2609400678266,
+              "dataSize": 134.58692176212782,
+              "disk": 4.159675007556476,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9932647643030357
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.1865962410729907,
+              "memory": 5598.430758660128,
+              "dataSize": 144.6260462148376,
+              "disk": 4.2366437554005225,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9804737687138392
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3916.3821079286727,
+              "dataSize": 106.07175369791327,
+              "disk": 4.596301419566588,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9227465647511228
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3049,
+              "dataSize": 113.28287187342583,
+              "disk": 4.491286466280609,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9373546648469501
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5248.152497040523,
+              "dataSize": 115.97756650697164,
+              "disk": 4.558373174172182,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9395767075666469
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.246199240235429,
+              "memory": 5375.857352515644,
+              "dataSize": 123.67395045109484,
+              "disk": 4.216083937479802,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9318630573392913
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.0530397842831256,
+              "memory": 5356.19083540931,
+              "dataSize": 131.03658683597257,
+              "disk": 4.853802221831683,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9929382141692176
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.0849762300288628,
+              "memory": 4790.021992642525,
+              "dataSize": 142.63521772216274,
+              "disk": 4.9752313035786315,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.98288251880398
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.7852999422516818,
+              "memory": 5027.175831179156,
+              "dataSize": 142.20271185454922,
+              "disk": 4.76707457078908,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9438957065949729
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.1057713565248881,
+              "memory": 3337.88974986941,
+              "dataSize": 110.05582755657157,
+              "disk": 4.8232589261102135,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9867606056830954
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.761939625808469,
+              "memory": 5183.902546627994,
+              "dataSize": 140.3452049049066,
+              "disk": 4.5762057156498415,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9272889404734431
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.416125950603268,
+              "memory": 4390.935190056257,
+              "dataSize": 169.85405691851713,
+              "disk": 4.246723062550208,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9289767741597862
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.9493970329013601,
+              "memory": 5188.067504925199,
+              "dataSize": 148.36967043503972,
+              "disk": 4.960314824080552,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9747498652508555
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4584.644870655542,
+              "dataSize": 171.63046589912136,
+              "disk": 4.814099303003088,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.926489377634788
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.000482464986153,
+              "memory": 4225.962083363472,
+              "dataSize": 164.54863762317706,
+              "disk": 4.835753198487169,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.92022451934368
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.493464460621662,
+              "memory": 3467.3302874142173,
+              "dataSize": 111.14000931410146,
+              "disk": 4.18517763060145,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.998197839555653
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3496.3343596007767,
+              "dataSize": 168.97422947822483,
+              "disk": 4.186362704482662,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9837482237586405
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.201586205335639,
+              "memory": 5449.584352239479,
+              "dataSize": 158.3485204814258,
+              "disk": 4.338408872039864,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.918617277536629
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.318347905816704,
+              "memory": 4267.901768625792,
+              "dataSize": 113.73699500330682,
+              "disk": 4.940002904447008,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9477967522209911
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.5349983807976413,
+              "memory": 3216.9407035686163,
+              "dataSize": 136.68431078408537,
+              "disk": 4.794857999459031,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9911725881322705
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5627.481142955104,
+              "dataSize": 117.63665688516458,
+              "disk": 4.864353453118669,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.980036506849193
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.0379128327616143,
+              "memory": 4724.538919114715,
+              "dataSize": 111.06885625477008,
+              "disk": 4.732911185645744,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9818706670225622
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 38,
+    "helperID": 22
+  },
+  {
+    "serviceID": 11,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.637285125633166,
+              "memory": 3772.2453954511097,
+              "dataSize": 168.36259320052795,
+              "disk": 4.628510239369506,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9038145679281883
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.7055237008508786,
+              "memory": 5340.588209746484,
+              "dataSize": 162.2060540815304,
+              "disk": 4.132581412584994,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.988433286196315
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3658.916520382276,
+              "dataSize": 108.99658692296586,
+              "disk": 4.739767607643749,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9021522501989191
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.8223897985133286,
+              "memory": 4597.869218830326,
+              "dataSize": 144.20535068640365,
+              "disk": 4.504359742190192,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9561591791274445
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4122.2717209815455,
+              "dataSize": 111.38722910038713,
+              "disk": 4.120904344514491,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9821671752861834
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.6827064783839991,
+              "memory": 3941.1482103212884,
+              "dataSize": 132.48819523183977,
+              "disk": 4.971535370066118,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9897272363060275
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.7585920444437253,
+              "memory": 5645.339362631987,
+              "dataSize": 109.99697508244996,
+              "disk": 4.305648451054468,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.917167311296601
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.677792019819194,
+              "memory": 5523.454890968029,
+              "dataSize": 106.22037218587263,
+              "disk": 4.463129622128674,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9935982656557105
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.3306484860166994,
+              "memory": 5342.319486822296,
+              "dataSize": 159.09831065546518,
+              "disk": 4.125914110321139,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.955571785821352
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.1657104480845493,
+              "memory": 3822.35684819862,
+              "dataSize": 124.39259142389028,
+              "disk": 4.813818727375904,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9431795025115016
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.459973769001587,
+              "memory": 4108.21280088244,
+              "dataSize": 174.07177267597308,
+              "disk": 4.9639451059647,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9978934711041921
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.904286331964423,
+              "memory": 4063.016972873212,
+              "dataSize": 159.01304035800771,
+              "disk": 4.135344471969352,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9862464451552095
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.20051682937665,
+              "memory": 5462.302839022921,
+              "dataSize": 121.41349601923363,
+              "disk": 4.274908470396805,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9409939016073585
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3876.8672883571917,
+              "dataSize": 104.11015368742359,
+              "disk": 4.797129100014795,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.954640976724056
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4888.669344837346,
+              "dataSize": 114.67685793451044,
+              "disk": 4.286774028749519,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9563975025674848
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.7401292525930643,
+              "memory": 3275.840125697064,
+              "dataSize": 169.81334889362057,
+              "disk": 4.579640822729541,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9927548244323959
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5099.364942831078,
+              "dataSize": 133.90275403384138,
+              "disk": 4.44692054376794,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9009036274964336
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5281.471974975215,
+              "dataSize": 128.51227596446654,
+              "disk": 4.8920872960783885,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9281968648229547
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1.6337687699474093,
+              "memory": 4457.675627547812,
+              "dataSize": 122.56139856988152,
+              "disk": 4.806653987398514,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9270720177763949
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.6033028409120984,
+              "memory": 4867.661440065802,
+              "dataSize": 169.03593877594838,
+              "disk": 4.048206795640068,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9633343017739361
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4338.637508408108,
+              "dataSize": 126.33196140412545,
+              "disk": 4.381677330750907,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.998928284698727
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.8885815701635202,
+              "memory": 5575.958650752429,
+              "dataSize": 163.8287858970536,
+              "disk": 4.837068777098128,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9304458648965878
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.1426454516359676,
+              "memory": 5496.778302897886,
+              "dataSize": 164.7222427736823,
+              "disk": 4.573101348572285,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9813606264172718
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.184685328022806,
+              "memory": 3049,
+              "dataSize": 162.28660809435257,
+              "disk": 4.903530242497173,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9882987751661789
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4532.286235286417,
+              "dataSize": 118.31610492273593,
+              "disk": 4.581726202576831,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9714719237214747
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 39,
+    "helperID": 23
+  },
+  {
+    "serviceID": 12,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.6203639831966203,
+              "memory": 3389.4276081627067,
+              "dataSize": 135.05851162765816,
+              "disk": 4.927472965745433,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9559146271163618
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3571.8282722375216,
+              "dataSize": 147.14534742600722,
+              "disk": 4.680757397811217,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9478077526074825
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.749063085510252,
+              "memory": 3483.909189613565,
+              "dataSize": 161.62268227687144,
+              "disk": 4.516639841874959,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.902681817233261
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3843.8107921961787,
+              "dataSize": 152.82368838984615,
+              "disk": 4.760750602073337,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9862737849288961
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.356984175852821,
+              "memory": 3511.3181759333274,
+              "dataSize": 157.3662228530536,
+              "disk": 4.768991895529185,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9885832054484978
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4053.5720002688613,
+              "dataSize": 106.51349941691565,
+              "disk": 4.884243330797645,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9626041774970745
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.8291401542412813,
+              "memory": 5401.417617461419,
+              "dataSize": 103.97244784318094,
+              "disk": 4.803562338232711,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9896273870543904
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.2874454844494645,
+              "memory": 4614.522867679976,
+              "dataSize": 139.7937064444306,
+              "disk": 4.299115792460488,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.93500012477731
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4924.521679181682,
+              "dataSize": 172.14761835932256,
+              "disk": 4.288414709891241,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9856608517575687
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.0913023507740496,
+              "memory": 3067.43100193615,
+              "dataSize": 126.21256472448165,
+              "disk": 4.7996480190675985,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9395461948462516
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.9360013617940046,
+              "memory": 3403.8412946614226,
+              "dataSize": 144.65227225100486,
+              "disk": 4.167638766261744,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9910834147955138
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3783.832017090219,
+              "dataSize": 167.22972052100812,
+              "disk": 4.767093242804178,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9903091086361165
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3976.949816923489,
+              "dataSize": 142.9245645490891,
+              "disk": 4.161347595284126,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9226446937996604
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.266617991560103,
+              "memory": 5300.800078584669,
+              "dataSize": 159.56009946651014,
+              "disk": 4.220268969969176,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9163126702698239
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.9372138947925928,
+              "memory": 3968.212155451928,
+              "dataSize": 126.11062297778861,
+              "disk": 4.958895674648785,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9568311478556033
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4024.796793118937,
+              "dataSize": 120.30049547918009,
+              "disk": 4.507728784800003,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9757955286073823
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.206691312194757,
+              "memory": 3049,
+              "dataSize": 127.85580560519627,
+              "disk": 4.2028274362854035,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9559329012061384
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3573.925792926591,
+              "dataSize": 125.13315006778079,
+              "disk": 4.4871642838911185,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9871407033774611
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4960.11746591652,
+              "dataSize": 142.02625565596878,
+              "disk": 4.480007569011372,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9454527010997373
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.5979953709462795,
+              "memory": 4595.673079733461,
+              "dataSize": 156.58116983777677,
+              "disk": 4.944361941983377,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9738005425672394
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5272.602664964865,
+              "dataSize": 150.075145152456,
+              "disk": 4.492135553395306,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9781302303877224
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3049,
+              "dataSize": 108.61113868817169,
+              "disk": 4.984505951328771,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.91478375972706
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.7243953371328637,
+              "memory": 4078.0751136279355,
+              "dataSize": 128.44021373227181,
+              "disk": 4.463836196401411,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9896390535710794
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4558.565058697017,
+              "dataSize": 175.16617179005829,
+              "disk": 4.82351359148865,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.933165063219846
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4077.071391982373,
+              "dataSize": 108.95178859580895,
+              "disk": 4.7695924680646655,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9367580702101548
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 40,
+    "helperID": 24
+  },
+  {
+    "serviceID": 13,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5048.332336891194,
+              "dataSize": 151.90079755543667,
+              "disk": 4.3457698197866765,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9211412837279273
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.723650183936493,
+              "memory": 4591.589142199805,
+              "dataSize": 128.571795952309,
+              "disk": 4.029607259806266,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.981310766481631
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4305.7378204978395,
+              "dataSize": 160.151620923621,
+              "disk": 4.475495414021638,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9824269848954169
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.2003771120623252,
+              "memory": 5517.6430972491835,
+              "dataSize": 125.60750519415208,
+              "disk": 4.114348348383413,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9246649831587116
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.398306236051675,
+              "memory": 5520.478672849304,
+              "dataSize": 109.1991975994278,
+              "disk": 4.948983867895137,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9493889042946007
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4108.264588768287,
+              "dataSize": 150.49472678267367,
+              "disk": 4.539640850832628,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9053500656976057
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4638.117791088992,
+              "dataSize": 161.95940412426677,
+              "disk": 4.168035932491456,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9914089192721369
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.6999189262424146,
+              "memory": 5001.590276217756,
+              "dataSize": 145.78326428437393,
+              "disk": 4.3475450434651535,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9903756415076387
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.520486977896038,
+              "memory": 4573.215081802428,
+              "dataSize": 153.0900059912496,
+              "disk": 4.169071624735755,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9561962157954875
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3971.5339851922104,
+              "dataSize": 131.03842893492737,
+              "disk": 4.951451477705477,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9937022953136129
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.0085022233215835,
+              "memory": 5599.0776481555295,
+              "dataSize": 159.65045368752195,
+              "disk": 4.576805513454287,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.944787453859221
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3049,
+              "dataSize": 111.0897162541875,
+              "disk": 4.768657271036384,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.977454154536652
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4349.524859475072,
+              "dataSize": 153.86046616163998,
+              "disk": 4.653164875439436,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9846710505161684
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3585.8154042014958,
+              "dataSize": 170.53970718866617,
+              "disk": 4.224406747017113,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9901932270862949
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.534307173989924,
+              "memory": 5347.6409189915385,
+              "dataSize": 113.42391690030207,
+              "disk": 4.399927379256384,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9473394438937431
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.8317566196721806,
+              "memory": 4123.828735828112,
+              "dataSize": 101.25430682917924,
+              "disk": 4.388964931915487,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9838347193946962
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.310282192753008,
+              "memory": 3857.649750417965,
+              "dataSize": 127.15563989967941,
+              "disk": 4.703186514901866,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9707101809756222
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.6441938917469474,
+              "memory": 4495.131731109691,
+              "dataSize": 130.3997034198107,
+              "disk": 4.998562826163574,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9989252759066999
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3734.930111457148,
+              "dataSize": 123.17967697511067,
+              "disk": 4.876779329493363,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9824618468407088
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.2075626850155539,
+              "memory": 3333.936515687184,
+              "dataSize": 169.1121968661406,
+              "disk": 4.5018653523684335,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9726442997045606
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.0012796591589401,
+              "memory": 5264.975845962437,
+              "dataSize": 169.5595572694063,
+              "disk": 4.948506926563711,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9883673733289395
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.240395101350225,
+              "memory": 4401.423130719646,
+              "dataSize": 145.73201303329444,
+              "disk": 4.658740847782892,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9852637254200081
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4322.94587186528,
+              "dataSize": 121.316256131928,
+              "disk": 4.604690062156477,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9000247302938992
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.56215171755075,
+              "memory": 5073.187930968248,
+              "dataSize": 151.72218473944054,
+              "disk": 4.337555545741392,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9347612178132695
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3062.2697636491325,
+              "dataSize": 137.49182618455038,
+              "disk": 4.595310015689944,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9126814439365802
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 41,
+    "helperID": 25
+  },
+  {
+    "serviceID": 14,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.266664637848579,
+              "memory": 3672.7547545177404,
+              "dataSize": 168.38538986908497,
+              "disk": 4.879803814119688,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9958031998466325
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.1161396293873493,
+              "memory": 3459.2138981374046,
+              "dataSize": 114.38567496810037,
+              "disk": 4.559207698324782,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9075969100281657
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.2692436945201466,
+              "memory": 3450.2802506319204,
+              "dataSize": 155.55741943058166,
+              "disk": 4.203548287394977,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9972286951186687
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5431.794256091174,
+              "dataSize": 152.75807889032524,
+              "disk": 4.525100361194889,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9915848638764423
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5583.515068751862,
+              "dataSize": 151.32129630086428,
+              "disk": 4.481709907724557,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9390073054311625
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.773616776090011,
+              "memory": 5232.7856086960255,
+              "dataSize": 163.02594799324515,
+              "disk": 4.897209028863381,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9424860396715258
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.542326716043661,
+              "memory": 4866.252816183536,
+              "dataSize": 127.54489101662617,
+              "disk": 4.47030674024141,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9906448891322194
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4363.5452956622275,
+              "dataSize": 107.74428233393495,
+              "disk": 4.347183442742772,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9812984972957951
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5296.048914134872,
+              "dataSize": 169.41103532450458,
+              "disk": 4.67514513855058,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9569845735840574
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.556069704690648,
+              "memory": 4528.686196803071,
+              "dataSize": 173.55821984185843,
+              "disk": 4.870384369027316,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9961778875986922
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.9617926728616752,
+              "memory": 4845.650973675371,
+              "dataSize": 101.84027290853332,
+              "disk": 4.501954273974112,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9656564668290055
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3049,
+              "dataSize": 115.9772456332536,
+              "disk": 4.59299325826726,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.991385106267563
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3930.7374294097585,
+              "dataSize": 109.76536774921998,
+              "disk": 4.140604263758377,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9974477722129507
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4414.057391339886,
+              "dataSize": 154.48944410384314,
+              "disk": 4.855967956710998,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9459095695396188
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4540.191254589757,
+              "dataSize": 103.58678694642194,
+              "disk": 4.780684803461346,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9845325936241045
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.9635998927606257,
+              "memory": 5043.638871218678,
+              "dataSize": 130.2257414303979,
+              "disk": 4.264317259702307,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9922681155137888
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 2.0957398306711728,
+              "memory": 4673.108404785428,
+              "dataSize": 117.79703461191903,
+              "disk": 4.370087201655631,
+              "provider": "Ericsson",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9801917011902274
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.578779388327869,
+              "memory": 4311.6248353536685,
+              "dataSize": 125.81695505250212,
+              "disk": 4.2886544005009855,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9861118923540478
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5469.286625479267,
+              "dataSize": 158.22928525705748,
+              "disk": 4.925993890890943,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.907755476376699
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.749514401461325,
+              "memory": 5286.837451504798,
+              "dataSize": 155.6351302467103,
+              "disk": 4.465092778963263,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9431708603893507
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.5759984778185223,
+              "memory": 3472.1912517930123,
+              "dataSize": 162.62256425759142,
+              "disk": 4.220579630103742,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9858732659206655
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3220.9629481898055,
+              "dataSize": 132.18741213841665,
+              "disk": 4.492515363403294,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9803377930440618
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1.3043153455400072,
+              "memory": 4028.7349570150195,
+              "dataSize": 156.49897364511278,
+              "disk": 4.815058420356749,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9092360150781446
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4790.143073170064,
+              "dataSize": 128.7628992319363,
+              "disk": 4.363694803488288,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.9923150566679555
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1.9547072280413937,
+              "memory": 5288.601583714343,
+              "dataSize": 96,
+              "disk": 4.680579424286401,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9546087641437631
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 42,
+    "helperID": 26
+  },
+  {
+    "serviceID": 15,
+    "components": [
+      {
+        "componentID": 1,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.1409455427705066,
+              "memory": 3581.500425994007,
+              "dataSize": 151.58326545902628,
+              "disk": 4.264345665327662,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9270304016652747
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4780.532918818472,
+              "dataSize": 111.34009328778656,
+              "disk": 4.0434202349619355,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9455287235564032
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4533.7209990776955,
+              "dataSize": 160.86482897615684,
+              "disk": 4.321357596039236,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9782170874401073
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3125.476713465297,
+              "dataSize": 160.53799355406912,
+              "disk": 4.610065407447312,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9891549765306282
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3191.8087825111324,
+              "dataSize": 99.94122939281561,
+              "disk": 4.3583870067186785,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9810960778486311
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 2,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4409.875383529977,
+              "dataSize": 120.20477374571723,
+              "disk": 4.104929593487446,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9840773169003791
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1.8990791553139377,
+              "memory": 5083.003588509644,
+              "dataSize": 156.98277407737183,
+              "disk": 4.110335209429653,
+              "provider": "Azure",
+              "codecType": "H264",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.994495078776545
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4745.40004841259,
+              "dataSize": 123.39783717686682,
+              "disk": 4.966918892533933,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9840994925876658
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 2.8680867489378623,
+              "memory": 3196.359754436069,
+              "dataSize": 173.15416492536542,
+              "disk": 4.895598765953254,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9888618266913765
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5368.039172991201,
+              "dataSize": 177.46488038446986,
+              "disk": 4.959586435062526,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9613322672706461
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 3,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4507.064522486831,
+              "dataSize": 175.4847129883348,
+              "disk": 4.775612940213097,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9984970574975341
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5615.759029994853,
+              "dataSize": 124.05344885089264,
+              "disk": 4.534498609128292,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9232877272110914
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 2.8842880896373706,
+              "memory": 4686.15530708764,
+              "dataSize": 126.21926302626565,
+              "disk": 4.624668018932742,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9911605863422297
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4295.242101504483,
+              "dataSize": 129.02619489865143,
+              "disk": 4.804993279394577,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9971080633663927
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3829.387554102702,
+              "dataSize": 112.52871542662473,
+              "disk": 4.866501476677559,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9827289837676833
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 4,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 2.932925958300693,
+              "memory": 4620.697742532957,
+              "dataSize": 107.0143329590004,
+              "disk": 4.916758754933531,
+              "provider": "Ericsson",
+              "codecType": "H264",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.927797472003359
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4916.157103253783,
+              "dataSize": 159.26868453553897,
+              "disk": 4.603029809487211,
+              "provider": "Azure",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9953898629228045
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4099.797554721401,
+              "dataSize": 140.05890723088507,
+              "disk": 4.714241016015329,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tD",
+              "reliabilityScore": 0.9975632061549957
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4326.711503605053,
+              "dataSize": 106.34387232044956,
+              "disk": 4.888097149204792,
+              "provider": "AWS",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9865590862507927
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 2.8456598611021486,
+              "memory": 4628.927084421143,
+              "dataSize": 98.03135318355783,
+              "disk": 4.767519712394774,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.916518772997455
+            }
+          }
+        ]
+      },
+      {
+        "componentID": 5,
+        "versions": [
+          {
+            "versionNumber": 1,
+            "characteristics": {
+              "cpu": 1.939804173100951,
+              "memory": 3952.546147153509,
+              "dataSize": 99.19594662674493,
+              "disk": 4.997375499418512,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9859150649073743
+            }
+          },
+          {
+            "versionNumber": 2,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5029.99022404686,
+              "dataSize": 113.37351457153525,
+              "disk": 4.4356933226496515,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9829779967755692
+            }
+          },
+          {
+            "versionNumber": 3,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 4029.580670024403,
+              "dataSize": 137.01202743097653,
+              "disk": 4.15201901396992,
+              "provider": "K8w",
+              "codecType": "H264",
+              "transcoderVersion": "tC",
+              "reliabilityScore": 0.9947827389964939
+            }
+          },
+          {
+            "versionNumber": 4,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 3952.8919112612316,
+              "dataSize": 160.51900710140063,
+              "disk": 4.905452574506119,
+              "provider": "AWS",
+              "codecType": "H256",
+              "transcoderVersion": "tA",
+              "reliabilityScore": 0.993006584403244
+            }
+          },
+          {
+            "versionNumber": 5,
+            "characteristics": {
+              "cpu": 1,
+              "memory": 5203.644295697677,
+              "dataSize": 133.97726076733858,
+              "disk": 4.810568950338606,
+              "provider": "K8w",
+              "codecType": "H256",
+              "transcoderVersion": "tB",
+              "reliabilityScore": 0.9131516402364489
+            }
+          }
+        ]
+      }
+    ],
+    "userID": 43,
+    "helperID": 27
+  }
+]

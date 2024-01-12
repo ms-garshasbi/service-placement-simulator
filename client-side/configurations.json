@@ -1,0 +1,84 @@
+{
+    "_comment": ["Valid values for type: (new, current, tuning, optimalConfigs)",
+                 "Valid values for cmd: (GA, PGA, SA, heuristics, tGA, tSA, oGA, oSA)",
+                 "Valid values for scale: (small, medium, large, xlarge)",
+                 
+                 "If type=new, no need to set cmd and scale.", 
+                 "If type=current, cmd={GA, PGA, SA, heuristics} and scale={small, medium, large, xlarge}",
+                 "If type=tuning, cmd={tGA, tSA} and scale={small, medium, large, xlarge}",
+                 "If type=optimalConfigs, cmd={oGA, oSA} and scale={small, medium, large, xlarge}",
+                 "Notice: If type=optimalConfigs, tuning data must exist.",
+                 
+                 "Descriptions for the values:",
+                 "GA: run genetic algorithm",
+                 "PGA: run parallel genetic algoritm",
+                 "SA: run simulated annealing algorithm",
+                 "heuristics: run heuristics algorithms",
+                 "tGA: run tuning process for genetic algorithm",
+                 "tSA: run tuning process for simulated annealing algorithms",
+                 "oGA: select optimal configurations for GA based on pareto front method",
+                 "oSA: select optimal configurations for SA based on pareto front method",
+                 "new: generate new use case",
+                 "current: use current available use cases"
+                ],
+
+    "type": "current",
+    "cmd": "GA",
+    "scale": "small",
+    "geneticAlgorithmConfigs": 
+    {
+        "iterations": 50,
+        "populationSize": 200,
+        "mutationRate": 0.01,
+        "crossoverRate": 0.6,
+        "selectionPressure": 20
+    },
+    "parallelGeneticAlgorithmConfigs": 
+    {
+        "iterations": 50,
+        "populationSize": 200,
+        "mutationRate": 0.01,
+        "crossoverRate": 0.6,
+        "selectionPressure": 20,
+        "numberOfSlaves": 2
+    },
+    "simulatedAnnealingConfigs": 
+    {
+        "terminationValue": 0.000000001,
+        "temperature": 1000,
+        "alpha": 0.995,
+        "updatingRate": 0.01
+    },
+    "useCase":
+    {
+        "new": {
+            "numberOfUsers": 10,
+            "numberOfHelpers": 5,
+            "numberOfAccessPoints": 3,
+            "numberOfEdgeNodes": 2,
+            "numberOfCloudNodes": 1,
+            "numbeOfServiceComponentsVersions": 5
+        }
+    },
+    "gridTuning":
+    {
+        "GA": {
+            "populationSizes": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000],
+            "mutationRates": [0.01, 0.05, 0.1],
+            "crossoverRates": [0.5, 0.6, 0.7, 0.8],
+            "tournamentSelectionSize": [0.01, 0.05, 0.1],
+            "iteration": 200
+        },
+        "SA": {
+            "termination":[0.00001, 0.000001, 0.0000001], 
+            "temperature": [100, 500, 1000],
+            "alpha": [0.95, 0.85],
+            "rate":[0.01, 0.05, 0.1]
+        }
+    },
+    "address":
+    {
+        "ip": "localhost",
+        "port": "3000"
+    }
+}
