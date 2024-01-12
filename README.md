@@ -74,7 +74,7 @@ sudo docker run --publish [port]:[port] --name [image-name] --rm [your dockerhub
 
 Use following command to stop the running of the docker container:
 ```bash
-sudo docker stop [container-name]
+sudo docker stop [image-name]
 ```
 ### Running the simulator using Minikube
 To run the server-side simulator using Minikube, first, you need to install Minikube. Instructions on how to install Minikube can be found [here](https://minikube.sigs.k8s.io/docs/start/). In the server-side directory, you'll find two YAML files. These files are utilized to specify the deployment and service configurations for the pod(s). Please note that if you intend to run your Dockerized simulator from your Docker Hub, you should replace the image address of the simulator in the YAML file.
