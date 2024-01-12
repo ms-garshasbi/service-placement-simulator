@@ -68,8 +68,8 @@ sudo docker login --username [your dockerhub username] --password [your dockerhu
 
 You can use the following commands to push the Docker image and run the simulator image in the container:
 ```bash
-sudo docker push [your dockerhub password]/[image-name]:[tag-name]
-sudo docker run --publish [port]:[port] --name [image-name] --rm [your dockerhub password]/[image-name]:[tag-name]
+sudo docker push [your dockerhub username]/[image-name]:[tag-name]
+sudo docker run --publish [port]:[port] --name [image-name] --rm [your dockerhub username]/[image-name]:[tag-name]
 ```
 
 Use following command to stop the running of the docker container:
