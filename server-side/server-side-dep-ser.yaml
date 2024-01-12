@@ -1,0 +1,16 @@
+# kubectl create -f server-side-dep-ser.yaml
+
+# service.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: server-side-dep-ser
+spec:
+  selector:
+    app: server-side-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: NodePort
