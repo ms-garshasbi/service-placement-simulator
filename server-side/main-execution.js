@@ -8,7 +8,7 @@ const ipPort = 3000
 
 app.use(express.json({
     inflate: true,
-    limit: '100000kb',
+    limit: '10000kb',
     reviver: null,
     strict: true,
     type: 'application/json',
