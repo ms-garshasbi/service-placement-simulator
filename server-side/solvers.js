@@ -247,31 +247,27 @@ class objFuncCalculator {
 
     executionTime(solution)
     {
-        let eT = 0 //wT
+        let eT = 0;
         for (let k = 0; k < solution.length; k++)
-        {
+        {        
             let node_id = solution[k][3];
-            for (let i = 0; i <= k; i++)
+            if (node_id < this.helpers[0]["nodeID"])
             {
-                let CC, CR;
-                if (solution[i][3] == node_id && node_id < this.helpers[0]["nodeID"])
-                {
-                    CR = this.services[solution[i][0] - 1]['components'][solution[i][1] - 1]['versions'][solution[i][2] - 1]['characteristics']['cpu'];
-                    CC = this.computingNodes[solution[i][3] - 1]['characteristics']['cpu'];
-                    eT = eT + CR/CC;
-                }
-                else if (solution[i][3] == node_id && node_id >= this.helpers[0]["nodeID"] && node_id < this.users[0]["nodeID"])
-                {
-                    CR = this.services[solution[i][0] - 1]['components'][solution[i][1] - 1]['versions'][solution[i][2] - 1]['characteristics']['cpu'];
-                    CC = this.helpers[solution[i][3] - this.helpers[0]["nodeID"]]['characteristics']['cpu'];
-                    eT = eT + CR/CC;
-                }
-                else if (solution[i][3] == node_id && node_id >= this.users[0]["nodeID"])
-                {
-                    CR = this.services[solution[i][0] - 1]['components'][solution[i][1] - 1]['versions'][solution[i][2] - 1]['characteristics']['cpu'];
-                    CC = this.users[solution[i][3] - this.users[0]["nodeID"]]['characteristics']['cpu'];
-                    eT = eT + CR/CC;
-                }
+                const CR = this.services[solution[k][0] - 1]['components'][solution[k][1] - 1]['versions'][solution[k][2] - 1]['characteristics']['cpu'];
+                const CC = this.computingNodes[solution[k][3] - 1]['characteristics']['cpu'];
+                eT = eT + CR/CC;
+            }
+            else if (node_id >= this.helpers[0]["nodeID"] && node_id < this.users[0]["nodeID"])
+            {
+                const CR = this.services[solution[k][0] - 1]['components'][solution[k][1] - 1]['versions'][solution[k][2] - 1]['characteristics']['cpu'];
+                const CC = this.helpers[solution[k][3] - this.helpers[0]["nodeID"]]['characteristics']['cpu'];
+                eT = eT + CR/CC;
+            }
+            else if (node_id >= this.users[0]["nodeID"])
+            {
+                const CR = this.services[solution[k][0] - 1]['components'][solution[k][1] - 1]['versions'][solution[k][2] - 1]['characteristics']['cpu'];
+                const CC = this.users[solution[k][3] - this.users[0]["nodeID"]]['characteristics']['cpu'];
+                eT = eT + CR/CC;
             }
         }
         return eT;
