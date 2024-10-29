@@ -2,23 +2,56 @@ const axios = require('axios');
 const fs = require('fs');
 const configurations = readJSON("configurations.json");
 
-//const args = process.argv.slice(2);
+
 const ip = configurations['address']['ip'];
 const port = configurations['address']['port'];
 let url = `http://${ip}:${port}/json`;
 
 
 function sendAxiosPost(url, dataObj) {
-    axios.post(url, dataObj)
+    const config = {
+        timeout: 0
+    };
+
+    axios.post(url, dataObj, config)
         .then((res) => {
             console.log(res.data);
+
+        const path = require('path');
+        const flattenObject = (obj, prefix = '') =>
+            Object.keys(obj).reduce((acc, k) => {
+            const pre = prefix.length ? prefix + '_' : '';
+            if (typeof obj[k] === 'object' && obj[k] !== null) {
+                Object.assign(acc, flattenObject(obj[k], pre + k));
+            } else {
+                acc[pre + k] = obj[k];
+            }
+            return acc;
+            }, {});
+        
+        // const flattenedData = flattenObject(res.data);
+        
+        // const titles = Object.keys(flattenedData).join(',');
+        // const values = Object.values(flattenedData).join(',');
+
+        // const csvContent = `${titles}\n${values}`;
+        // const filePath = path.join(__dirname, 'output.csv');
+        
+        // fs.writeFileSync(filePath, csvContent);
+        // console.log(`CSV file saved at ${filePath}`);
         })
         .catch((err) => {
-            console.log(err);
-        })
+            // This will catch both timeout and other network issues
+            if (err.code === 'ECONNABORTED') {
+                console.log('Axios request timed out');
+            } else {
+                console.log(err);
+            }
+        });
 }
 
-function saveJSON(jsonResult,str) {
+function saveJSON(jsonResult,str) 
+{
     fs.writeFile(str, JSON.stringify(jsonResult, null, 2), 'utf8', (err) => {
         if (err) 
         {
@@ -27,7 +60,8 @@ function saveJSON(jsonResult,str) {
     });
 }
 
-function getRandomValue(min, max) {
+function getRandomValue(min, max) 
+{
     return (Math.random() * (max - min) + min);
 }
 
@@ -159,7 +193,8 @@ class computingNodesGenerator {
                                 memory: getRandomValue(this.minAPMemoryMB, this.maxAPMemoryMB),
                                 disk: getRandomValue(this.minAPDiskGB, this.maxAPDiskGB),
                                 platform: this.APplatform[Math.floor(Math.random() * this.APplatform.length)],
-                                reliabilityScore: getRandomValue(this.minAPReliability, this.maxAPReliability)
+                                reliabilityScore: getRandomValue(this.minAPReliability, this.maxAPReliability),
+                                nodeBW: getRandomValue(80, 120)
                             }
                         }
                         this.jsonResult.push(computingNode);
@@ -177,7 +212,8 @@ class computingNodesGenerator {
                                 memory: getRandomValue(this.minENMemoryMB, this.maxENMemoryMB),
                                 disk: getRandomValue(this.minENDiskGB, this.maxENDiskGB),
                                 platform: this.ENplatform[Math.floor(Math.random() * this.ENplatform.length)],
-                                reliabilityScore: getRandomValue(this.minENReliability, this.maxENReliability)
+                                reliabilityScore: getRandomValue(this.minENReliability, this.maxENReliability),
+                                nodeBW: getRandomValue(80, 120)
                             }
                         }
                         this.jsonResult.push(computingNode);
@@ -195,7 +231,8 @@ class computingNodesGenerator {
                                 memory: getRandomValue(this.minCNMemoryMB, this.maxCNMemoryMB),
                                 disk: getRandomValue(this.minCNDiskGB, this.maxCNDiskGB),
                                 platform: this.CNplatform[Math.floor(Math.random() * this.CNplatform.length)],
-                                reliabilityScore: getRandomValue(this.minCNReliability, this.maxCNReliability)
+                                reliabilityScore: getRandomValue(this.minCNReliability, this.maxCNReliability),
+                                nodeBW: getRandomValue(80, 120)
                             }
                         }
                         this.jsonResult.push(computingNode);
@@ -223,21 +260,21 @@ class computingNodesGenerator {
                         0
                     ];
                 }
-                else if (i < numCNTier1 && j < numCNTier1) //Inside of Tier1
+                else if (i < numCNTier1 && j < numCNTier1) //Tier1
                 {
                     nodeConnections[i][j] = [
                             Math.floor(getRandomValue(this.minBandwidthInTier1, this.maxBandwidthInTier1)),
                             getRandomValue(this.minRttInTier1, this.maxRttInTier1)
                         ];
                 }
-                else if (i >= numCNTier1 && i < numCNTier1 + numCNTier2 && j >= numCNTier1 && j < numCNTier1 + numCNTier2) //Inside of Tier2
+                else if (i >= numCNTier1 && i < numCNTier1 + numCNTier2 && j >= numCNTier1 && j < numCNTier1 + numCNTier2) //Tier2
                 {
                     nodeConnections[i][j] = [
                             Math.floor(getRandomValue(this.minBandwidthInTier2, this.maxBandwidthInTier2)),
                             getRandomValue(this.minRttInTier2, this.maxRttInTier2)
                         ];
                 }
-                else if (i >= numCNTier1 + numCNTier2 && i < numCNTier1 + numCNTier2 + numCNTier3 && j >= numCNTier1 + numCNTier2 && j < numCNTier1 + numCNTier2 + numCNTier3) //Inside of Tier3
+                else if (i >= numCNTier1 + numCNTier2 && i < numCNTier1 + numCNTier2 + numCNTier3 && j >= numCNTier1 + numCNTier2 && j < numCNTier1 + numCNTier2 + numCNTier3) //Tier3
                 {
                     nodeConnections[i][j] = [
                         Math.floor(getRandomValue(this.minBandwidthInTier3, this.maxBandwidthInTier3)),
@@ -318,7 +355,6 @@ class computingNodesGenerator {
 
         }
 
-        //Save the infrastructure connections matrix in a file.
         fs.writeFile('./newUsecase/infraConnections.json', JSON.stringify(nodeConnections), (err) => {
             if (err) {
               console.error('Error writing file:', err);
@@ -388,7 +424,8 @@ class helpersGenerator {
                     memory: getRandomValue(this.minMemoryMB, this.maxMemoryMB),
                     disk: getRandomValue(this.minDiskGB, this.maxDiskGB),
                     os: this.os[Math.floor(Math.random() * this.os.length)],
-                    reliability: getRandomValue(this.minReliability, this.maxReliability)
+                    reliability: getRandomValue(this.minReliability, this.maxReliability),
+                    nodeBW: getRandomValue(80, 120)
                 }
             };
             this.jsonResult.push(helper);
@@ -443,7 +480,8 @@ class usersGenerator {
                     memory: getRandomValue(this.minMemoryMB, this.maxMemoryMB),
                     disk: getRandomValue(this.minDiskGB, this.maxDiskGB),
                     os: this.os[Math.floor(Math.random() * this.os.length)],
-                    reliability: getRandomValue(this.minReliability, this.maxReliability)
+                    reliability: getRandomValue(this.minReliability, this.maxReliability),
+                    nodeBW: getRandomValue(80, 120)
                 }
             };
             this.jsonResult.push(user);
@@ -502,9 +540,9 @@ class serviceGenerator {
 
     getReliabilityScore(min, max) {
         let rl = Math.random();
-        if (rl <= 0.4)
+        if (rl <= 0.7)
         {
-            return getRandomValue(0.98, 0.999);
+            return getRandomValue(1, 1);
             //return getRandomValue(min, max);
         }
         else
@@ -531,6 +569,16 @@ class serviceGenerator {
         return this.codecType[randomIndex];
     }
 
+    shuffleArray(arr) 
+    {
+        for (let i = arr.length - 1; i > 0; i--) 
+        {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]]; // Swap elements at indices i and j
+        }
+        return arr;
+    }
+
     generate()
     {
             const totalSCs = this.numUsers * this.numServiceComponents;
@@ -543,8 +591,8 @@ class serviceGenerator {
             const maxMemPerSC = platformMemory / totalSCs;
             const maxDiskPerSC = platformDisk / totalSCs;
 
-            const p1 = 0.7;
-            const p2 = 1.2;
+            const p1 = 0.8;
+            const p2 = 1;
 
 
             let jsonResult = [];
@@ -576,16 +624,46 @@ class serviceGenerator {
                     for (let v = 0; v < this.numVersions; v++)
                     {
 
+                        const provider = this.getProvider();
+                        const codec = this.getCodecType();
+                        let w1 = 1;
+                        let w2 = 1;
+                        if (provider == 'AWS')
+                        {
+                            w1 = 1.1
+                        }
+                        else if (provider == 'Azure')
+                        {
+                            w1 = 1.2
+                        }
+                        else if (provider == 'Ericsson')
+                        {
+                            w1 = 1.3
+                        }
+                        else if (provider == 'K8w')
+                        {
+                            w1 = 0.90
+                        }
+
+                        if (codec == 'H256')
+                        {
+                            w2 = 1
+                        }
+                        else if (codec == 'H264')
+                        {
+                            w2 = 1.3
+                        }
                         const version = {
                             versionNumber: v + 1,
                             characteristics: {
-                                cpu: getRandomValue(maxComPerSC * p1, maxComPerSC * p2),
-                                memory:getRandomValue(maxMemPerSC * p1, maxMemPerSC * p2),
-                                dataSize: getRandomValue(this.minDataSizeCommunication,this.maxDataSizeCommunication),
-                                disk: getRandomValue(maxDiskPerSC * p1, maxDiskPerSC * p2),
-                                provider: this.getProvider(),
-                                codecType: this.getCodecType(),
-                                reliabilityScore: this.getReliabilityScore(this.minReliability, this.maxReliability)
+                                cpu: getRandomValue(maxComPerSC * p1 * w2, maxComPerSC * p2 * w2),
+                                memory:getRandomValue(maxMemPerSC * p1* w1, maxMemPerSC * p2* w1),
+                                dataSize: getRandomValue(this.minDataSizeCommunication* w1,this.maxDataSizeCommunication* w1),
+                                disk: getRandomValue(maxDiskPerSC * p1* w1, maxDiskPerSC * p2* w1),
+                                provider: provider,
+                                codecType: codec,
+                                reliabilityScore: this.getReliabilityScore(this.minReliability - (w1 * 0.025), this.maxReliability),
+                                containerSize: getRandomValue(32000, 64000)
                             }
                         };
                         component.versions.push(version);
@@ -608,6 +686,176 @@ class serviceGenerator {
                 num_services: this.numUsers
             }
 
+    }
+
+    // generate2()
+    // {
+    //     //Computation
+    //     const platformComputational = this.platformComputationalCapacity * getRandomValue(this.minCapacity, this.maxCapacity);
+    //     const requieredCPU = [this.minCPUMIPS , this.maxCPUMIPS];
+    //     const numServiceComponents = Math.floor(((platformComputational / requieredCPU[0]) + (platformComputational / requieredCPU[1])) / 2);
+
+    //     //Disk
+    //     const platformDisk = this.platformDiskCapacity * getRandomValue(0.2, 0.3);
+    //     const requiredDiskMean = platformDisk / numServiceComponents //Mean
+    //     const requiredDisk = [Math.floor(requiredDiskMean * 0.7), Math.floor(requiredDiskMean * 1.2)]; //30 percentage (above/below) of the mean
+
+    //     //Memory
+    //     const platformMemory = this.platformMemoryCapacity * getRandomValue(this.minCapacity, this.maxCapacity);
+    //     const requiredMemoryMean = platformMemory / numServiceComponents //Mean
+    //     const requiredMemory = [Math.floor(requiredMemoryMean * 0.7), Math.floor(requiredMemoryMean * 1.2)]; //30 percentage (above/below) of the mean
+
+    //     //Network
+    //     const platformNetwork = this.platformNetworkCapacity * getRandomValue(this.minCapacity, this.maxCapacity);
+    //     const requiredNetworkMean = platformNetwork / numServiceComponents //Mean
+    //     const requiredNetwork = [Math.floor(requiredNetworkMean * 0.7), Math.floor(requiredNetworkMean * 1.2)]; //30 percentage (above/below) of the mean
+
+    //     let CPUversions = [];
+    //     let memoryVersions = [];
+    //     let diskVersions = [];
+    //     let dataSizeVersions = [];
+
+    //     for (let i = 0; i < this.numVersions; i++)
+    //     {
+    //         //Computation
+    //         let newArrayCPU = Array.from({ length: numServiceComponents }, () => requieredCPU[0]);
+    //         let totalSumCPU = newArrayCPU.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    //         while (platformComputational > totalSumCPU)
+    //         {
+    //             totalSumCPU = newArrayCPU.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    //             const min = Math.min(...newArrayCPU);
+    //             const minIndex = newArrayCPU.indexOf(min);
+    //             newArrayCPU[minIndex] = getRandomValue(requieredCPU[0], requieredCPU[1]);
+    //             newArrayCPU = this.shuffleArray([...newArrayCPU]);
+    //         }
+    //         CPUversions.push(newArrayCPU);
+            
+    //         //Disk
+    //         let newArrayDisk = Array.from({ length: numServiceComponents }, () => requiredDisk[0]);
+    //         let totalSumDisk = newArrayDisk.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    //         while (platformDisk > totalSumDisk)
+    //         {
+    //             totalSumDisk = newArrayDisk.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    //             const min = Math.min(...newArrayDisk);
+    //             const minIndex = newArrayDisk.indexOf(min);
+    //             newArrayDisk[minIndex] = getRandomValue(requiredDisk[0], requiredDisk[1]);
+    //             newArrayDisk = this.shuffleArray([...newArrayDisk]);
+    //         }
+    //         diskVersions.push(newArrayDisk);
+
+    //         //Memory
+    //         let newArrayMemory = Array.from({ length: numServiceComponents }, () => requiredMemory[0]);
+    //         let totalSumMemory = newArrayMemory.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    //         while (platformMemory > totalSumMemory)
+    //         {
+    //             totalSumMemory = newArrayMemory.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    //             const min = Math.min(...newArrayMemory);
+    //             const minIndex = newArrayMemory.indexOf(min);
+    //             newArrayMemory[minIndex] = getRandomValue(requiredMemory[0], requiredMemory[1]);
+    //             newArrayMemory = this.shuffleArray([...newArrayMemory]);
+    //         }
+    //         memoryVersions.push(newArrayMemory);
+
+    //         // //Data size
+    //         // let newArrayNetwork = Array.from({ length: numServiceComponents }, () => requiredNetwork[0]);
+    //         // let totalSumNetwork = newArrayNetwork.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    //         // while (platformNetwork > totalSumNetwork)
+    //         // {
+    //         //     totalSumNetwork = newArrayNetwork.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    //         //     const min = Math.min(...newArrayNetwork);
+    //         //     const minIndex = newArrayNetwork.indexOf(min);
+    //         //     newArrayNetwork[minIndex] = getRandomValue(requiredNetwork[0], requiredNetwork[1]);
+    //         //     newArrayNetwork = this.shuffleArray([...newArrayNetwork]);
+    //         // }
+    //         // dataSizeVersions.push(newArrayNetwork);
+    //     }
+
+    //     const numServicesCompnentEach = Math.floor(numServiceComponents / this.numUsers);
+    //     let jsonResult = [];
+    //     let comID = 1;
+    //     let cT = 0;
+    //     let hID = this.numComputingNodes + 1
+    //     let uID = this.numComputingNodes + this.numHelpers + 1;
+    //     const sT = this.numUsers;
+    //     for(let s = 0; s < sT; s++)
+    //     {
+    //         const service = {
+    //             serviceID: s + 1,
+    //             components: [],
+    //             userID: uID,
+    //             helperID: hID
+    //         }
+    //         uID++;
+    //         hID++;
+    //         if (hID >= this.numComputingNodes + 1 + this.numHelpers)
+    //         {
+    //             hID = this.numComputingNodes + 1;
+    //         }
+    //         for (let c = 0; c < numServicesCompnentEach; c++)
+    //         {
+    //             const component = {
+    //                 componentID: comID,
+    //                 versions: []
+    //             };
+    //             for (let v = 0; v < this.numVersions; v++)
+    //             {
+    //                 const version = {
+    //                     versionNumber: v + 1,
+    //                     characteristics: {
+    //                         cpu: CPUversions[v][cT],
+    //                         memory: memoryVersions[v][cT],
+    //                         dataSize: getRandomValue(this.minDataSizeCommunication,this.maxDataSizeCommunication),
+    //                         disk: diskVersions[v][cT],
+    //                         provider: this.getProvider(),
+    //                         codecType: this.getCodecType(),
+    //                         reliabilityScore: this.getReliabilityScore(this.minReliability, this.maxReliability)
+    //                     }
+    //                 };
+    //                 component.versions.push(version);
+    //             }
+    //             comID++;
+    //             cT++;
+    //             service.components.push(component);
+    //         }
+    //         comID = 1;
+    //         jsonResult.push(service);
+    //     }
+    //     return {
+    //         services: jsonResult,
+    //         min_max_CPUrequired: requieredCPU,
+    //         min_max_MAMORYrequired: requiredMemory,
+    //         min_max_DISKrequired: requiredDisk,
+    //         //min_max_DATASIZE: requiredNetwork,
+    //         num_serviceComponentEach: numServicesCompnentEach,
+    //         num_services: jsonResult.length
+    //     }
+    // }
+
+    requiredCapacity(services)
+    {
+        let totalComputationalRequirement = 0;
+        let totalMemoryRequirement = 0;
+        let totalDiskRequirement = 0;
+        let totalNetworkRequirement = 0;
+        for (let i = 0; i < services.length; i++)
+        {
+            for (let c = 0; c < services[i]['components'].length; c++)
+            {
+                for (let v = 0; v < services[i]['components'][c]['versions'].length; v++)
+                {
+                    totalComputationalRequirement += services[i]['components'][c]['versions'][v]['characteristics']['cpu'];
+                    totalMemoryRequirement += services[i]['components'][c]['versions'][v]['characteristics']['memory'];
+                    totalDiskRequirement += services[i]['components'][c]['versions'][v]['characteristics']['disk'];
+                    //totalNetworkRequirement += services[i]['components'][c]['versions'][v]['characteristics']['dataSize'];
+                }
+            }
+        }
+        return {
+            totalComputationalRequirement: totalComputationalRequirement / this.numVersions,
+            totalMemoryRequirement: totalMemoryRequirement / this.numVersions,
+            totalDiskRequirement: totalDiskRequirement / this.numVersions
+            //totalNetworkRequirement: totalNetworkRequirement / this.numVersions
+        }
     }
 
     connections(services) 
@@ -806,6 +1054,7 @@ class commands {
         const platformComputingCapacity = computingNodesCapacity['totalComputationalCapacity'] + helperNodesCapacity['totalComputationalCapacity'] + usersNodesCapacity['totalComputationalCapacity'];
         const platformMemoryCapacity = computingNodesCapacity['totalMemoryCapacity'] + helperNodesCapacity['totalMemoryCapacity'] + usersNodesCapacity['totalMemoryCapacity'];
         const platformDiskCapacity = computingNodesCapacity['totalDiskCapacity'] + helperNodesCapacity['totalDiskCapacity'] + usersNodesCapacity['totalDiskCapacity'];
+        const platformNetworkCapacity = computingNodesCapacity['totalBandwidthCapaciti'];
 
         //Services
         const serviceConfig = {
@@ -835,8 +1084,18 @@ class commands {
         };
 
         const service = new serviceGenerator(serviceConfig);
-        const services = service.generate();   
-        service.connections(services); //DAG
+        const services = service.generate();
+        const servicesRequirement =  service.requiredCapacity(services['services']);
+
+        const dataSize = [configurations['useCase']['serviceConfig']['minDataSize'], configurations['useCase']['serviceConfig']['maxDataSize']] 
+        
+        const componentConnections = service.connections(services); //DAG
+        // fs.readFile("newUsecase/componentsConnections.json", 'utf8', (err, data) => {
+        //     if (err) 
+        //     {
+        //       console.error('Error reading file:', err);
+        //     }
+        //   });
 
         //setting
         const dataSetting = 'Total CPU Capacity:' + ` ${platformComputingCapacity}` +
@@ -858,7 +1117,8 @@ class commands {
                             '\nNumber of edge nodes:' + ` ${numEdgeNodes}` +
                             '\nNumber of cloud nodes:' + ` ${numCloudNodes}`;
 
-
+        //const filePath = 'setup.txt';
+        //fs.writeFileSync(filePath, dataSetting);
         console.log(dataSetting);
 
         if (!fs.existsSync('newUsecase')) {
@@ -876,16 +1136,16 @@ class commands {
         saveJSON(dataSetting,'./newUsecase/setup.txt')
     }
 
-    runAlgorithms (scale)
+    runAlgorithms ()
     {
-        const usersNodes = readJSON(`./${scale}/users.json`);
-        const helperNodes = readJSON(`./${scale}/helpers.json`);
-        const computingNodes = readJSON(`./${scale}/nodes.json`);
-        const services = readJSON(`./${scale}/services.json`);
-        const componentConnections = readJSON(`./${scale}/componentsConnections.json`);
-        const infraConnections = readJSON(`./${scale}/infraConnections.json`);
+        const usersNodes = readJSON(`./${configurations['scale']}/users.json`);
+        const helperNodes = readJSON(`./${configurations['scale']}/helpers.json`);
+        const computingNodes = readJSON(`./${configurations['scale']}/nodes.json`);
+        const services = readJSON(`./${configurations['scale']}/services.json`);
+        const componentConnections = readJSON(`./${configurations['scale']}/componentsConnections.json`);
+        const infraConnections = readJSON(`./${configurations['scale']}/infraConnections.json`);
         
-        if (configurations['cmd'] == "GA")
+        if (configurations['algo'] == "GA")
         {
         sendAxiosPost(url, {
             computingNodes: computingNodes,
@@ -895,18 +1155,19 @@ class commands {
             componentConnections: componentConnections,
             infraConnections: infraConnections,
     
-            scale: scale,
-            cmd: "GA",
+            type: configurations['type'],
+            scale: configurations['scale'],
+            algo: configurations['algo'],
             configsGA: {
-                iteration: configurations['geneticAlgorithmConfigs']['iterations'],
-                crossoverRate: configurations['geneticAlgorithmConfigs']['crossoverRate'],
-                mutationRate: configurations['geneticAlgorithmConfigs']['mutationRate'],
-                selectionSize: configurations['geneticAlgorithmConfigs']['selectionPressure'],
-                populationSize: configurations['geneticAlgorithmConfigs']['populationSize']
+                iteration: configurations['geneticAlgorithm']['iterations'],
+                crossoverRate: configurations['geneticAlgorithm']['crossoverRate'],
+                mutationRate: configurations['geneticAlgorithm']['mutationRate'],
+                selectionSize: configurations['geneticAlgorithm']['selectionPressure'],
+                populationSize: configurations['geneticAlgorithm']['populationSize']
             }
         });
         }
-        else if (configurations['cmd'] == "heuristics")
+        else if (configurations['algo'] == "PSO")
         {
             sendAxiosPost(url, {
                 computingNodes: computingNodes,
@@ -916,27 +1177,83 @@ class commands {
                 componentConnections: componentConnections,
                 infraConnections: infraConnections,
         
-                scale: scale,
-                cmd: "heuristics"
+                type: configurations['type'],
+                scale: configurations['scale'],
+                algo: configurations['algo'],
+                configsPSO: {
+                    populationSize: configurations['particleSwarmOptimization']['populationSize'],
+                    w: configurations['particleSwarmOptimization']['w'],
+                    c1: configurations['particleSwarmOptimization']['c1'],
+                    c2: configurations['particleSwarmOptimization']['c2'],
+                    iteration: configurations['particleSwarmOptimization']['iteration']
+                }
+            })
+        }
+        else if (configurations['algo'] == "PSOGA" || configurations['algo'] == "GAPSO")
+        {
+            sendAxiosPost(url, {
+                computingNodes: computingNodes,
+                helperNodes: helperNodes,
+                usersNodes: usersNodes,
+                services: services,
+                componentConnections: componentConnections,
+                infraConnections: infraConnections,
+        
+                type: configurations['type'],
+                scale: configurations['scale'],
+                algo: configurations['algo'],
+                configsGA: {
+                    iteration: configurations['geneticAlgorithm']['iterations'],
+                    crossoverRate: configurations['geneticAlgorithm']['crossoverRate'],
+                    mutationRate: configurations['geneticAlgorithm']['mutationRate'],
+                    selectionSize: configurations['geneticAlgorithm']['selectionPressure'],
+                    populationSize: configurations['geneticAlgorithm']['populationSize']
+                },
+                configsPSO: {
+                    populationSize: configurations['particleSwarmOptimization']['populationSize'],
+                    w: configurations['particleSwarmOptimization']['w'],
+                    c1: configurations['particleSwarmOptimization']['c1'],
+                    c2: configurations['particleSwarmOptimization']['c2'],
+                    iteration: configurations['particleSwarmOptimization']['iteration']
+                }
+            })
+        }
+        else if (configurations['algo'] == "heuristics")
+        {
+            sendAxiosPost(url, {
+                computingNodes: computingNodes,
+                helperNodes: helperNodes,
+                usersNodes: usersNodes,
+                services: services,
+                componentConnections: componentConnections,
+                infraConnections: infraConnections,
+        
+                type: configurations['type'],
+                scale: configurations['scale'],
+                algo: configurations['algo']
             })
         }
     }
 
-    tuningCommand(scale, tCommand)
+    tuningCommand()
     {
-        if (scale != 'ave')
+        if (configurations['scale'] != 'ave')
         {
-            const usersNodes = readJSON(`./${scale}/users.json`);
-            const helperNodes = readJSON(`./${scale}/helpers.json`);
-            const computingNodes = readJSON(`./${scale}/nodes.json`);
-            const services = readJSON(`./${scale}/services.json`);
-            const componentConnections = readJSON(`./${scale}/componentsConnections.json`);
-            const infraConnections = readJSON(`./${scale}/infraConnections.json`);
+            const usersNodes = readJSON(`./${configurations['scale']}/users.json`);
+            const helperNodes = readJSON(`./${configurations['scale']}/helpers.json`);
+            const computingNodes = readJSON(`./${configurations['scale']}/nodes.json`);
+            const services = readJSON(`./${configurations['scale']}/services.json`);
+            const componentConnections = readJSON(`./${configurations['scale']}/componentsConnections.json`);
+            const infraConnections = readJSON(`./${configurations['scale']}/infraConnections.json`);
             
             let grid;
-            if (tCommand == 'tGA')
+            if (configurations['algo'] == 'GA')
             {
                 grid = configurations['gridTuning']['GA']
+            }
+            else if (configurations['algo'] == "PSO")
+            {
+                grid = configurations['gridTuning']['PSO']
             }
             sendAxiosPost(url, {
                 characteristics: {
@@ -947,70 +1264,21 @@ class commands {
                 componentConnections: componentConnections,
                 infraConnections: infraConnections,
                 },
-                cmd: tCommand,
-                scale: scale,
+                type: configurations['type'],
+                algo: configurations['algo'],
+                scale: configurations['scale'],
                 gridSearch: grid
             })
         }
-        else if (scale == 'ave')
-        {
-            const usersNodes_Small = readJSON('./small/users.json');
-            const helperNodes_Small = readJSON('./small/helpers.json');
-            const computingNodes_Small = readJSON('./small/nodes.json');
-            const services_Small = readJSON('./small/services.json');
-            const componentConnections_Small = readJSON('./small/connections.json');
-        
-            const usersNodes_Medium = readJSON('./medium/users.json');
-            const helperNodes_Medium = readJSON('./medium/helpers.json');
-            const computingNodes_Medium = readJSON('./medium/nodes.json');
-            const services_Medium = readJSON('./medium/services.json');
-            const componentConnections_Medium = readJSON('./medium/connections.json');
-        
-            const usersNodes_Larg = readJSON('./large/users.json');
-            const helperNodes_Larg = readJSON('./large/helpers.json');
-            const computingNodes_Larg = readJSON('./large/nodes.json');
-            const services_Larg = readJSON('./large/services.json');
-            const componentConnections_Larg = readJSON('./large/connections.json');
-        
-            const usersNodes_xLarg = readJSON('./xLarge/users.json');
-            const helperNodes_xLarg = readJSON('./xLarge/helpers.json');
-            const computingNodes_xLarg = readJSON('./xLarge/nodes.json');
-            const services_xLarg = readJSON('./xLarge/services.json');
-            const componentConnections_xLarg = readJSON('./xLarge/connections.json');
-        
-            sendAxiosPost(url, {
-                small: {
-                usersNodes: usersNodes_Small,
-                helperNodes: helperNodes_Small,
-                computingNodes: computingNodes_Small,
-                services: services_Small,
-                componentConnections: componentConnections_Small,
-                },
-                medium: {
-                usersNodes: usersNodes_Medium,
-                helperNodes: helperNodes_Medium,
-                computingNodes: computingNodes_Medium,
-                services: services_Medium,
-                componentConnections: componentConnections_Medium,
-                },
-                large: {
-                usersNodes: usersNodes_Larg,
-                helperNodes: helperNodes_Larg,
-                computingNodes: computingNodes_Larg,
-                services: services_Larg,
-                componentConnections: componentConnections_Larg,
-                },
-                xLarge: {
-                usersNodes: usersNodes_xLarg,
-                helperNodes: helperNodes_xLarg,
-                computingNodes: computingNodes_xLarg,
-                services: services_xLarg,
-                componentConnections: componentConnections_xLarg,
-                },
-                cmd: tCommand,
-                scale: "ave"
-            })
-        }
+    }
+
+    optConfigCommand()
+    {
+        sendAxiosPost(url, {
+            type: configurations['type'],
+            algo: configurations['algo'],
+            scale: configurations['scale']
+        })
     }
 }
 
@@ -1022,9 +1290,13 @@ if (configurations['type'] == 'new')
 }
 else if (configurations['type'] == 'current')
 {
-    cmd.runAlgorithms(configurations['scale']);
+    cmd.runAlgorithms();
 }
 else if (configurations['type'] == 'tuning')
 {
-    cmd.tuningCommand(configurations['scale'], configurations['cmd']);
+    cmd.tuningCommand();
+}
+else if (configurations['type'] == 'optConfig')
+{
+    cmd.optConfigCommand();
 }
