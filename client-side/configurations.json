@@ -1,23 +1,30 @@
 {
-    "_comment": ["Valid values for type: (new, current, tuning)",
-                 "Valid values for cmd: (GA, heuristics, tGA)",
+    "_comment": ["Valid values for type: (new, current, tuning, optConfig)",
+                 "Valid values for algo: (GA, PSO, PSOGA, GAPSO, heuristics)",
                  "Valid values for scale: (small, medium, large, xlarge)",
                  
                  "If type=new, no need to set cmd and scale.", 
-                 "If type=current, cmd={GA, heuristics} and scale={small, medium, large, xlarge}",
-                 "If type=tuning, cmd={tGA} and scale={small, medium, large, xlarge}",
+                 "If type=current, algo={valid values for algo} and scale={valid values for scale}",
+                 "If type=tuning, algo={GA, PSO} and scale={small, medium, large, xlarge}",
+                 "If type=optConfig, algo={GA, PSO} and scale={small, medium, large, xlarge}",
+                 "Notice: If type=optConfig, tuning data must exist.",
                  
                  "Descriptions for the values:",
-                 "GA: run genetic algorithm",
-                 "tGA: run tuning process for genetic algorithm",
+                 "GA: genetic algorithm",
+                 "PSO: particle swarm optimization",
+                 "PSOGA: The last population obtained by PSO is considered as the initial population for GA.",
+                 "GAPSO: The last population obtained by GA is considered as the initial population for PSO.",
+                 "heuristics: heuristics algorithms",
                  "new: generate new use case",
-                 "current: use current available use cases"
+                 "current: use current available use cases",
+                 "tuning: start tuning of an algorithm",
+                 "optConfig: select an optimal configuration for the algorithm"
                 ],
 
     "type": "current",
-    "cmd": "heuristics",
+    "algo": "GA",
     "scale": "small",
-    "geneticAlgorithmConfigs": 
+    "geneticAlgorithm": 
     {
         "iterations": 200,
         "populationSize": 200,
@@ -25,16 +32,24 @@
         "crossoverRate": 0.6,
         "selectionPressure": 20
     },
+    "particleSwarmOptimization": 
+    {
+        "populationSize": 60,
+        "w": 0.4,
+        "c1": 1.5,
+        "c2": 1.5,
+        "iteration": 200
+    },
     "useCase":
     {
         "new": {
-            "numberOfUsers": 250,
-            "numberOfHelpers": 125,
-            "numberOfAccessPoints": 150,
-            "numberOfEdgeNodes": 100,
-            "numberOfCloudNodes": 15,
-            "numberOfServiceComponentsPerService": 5,
-            "numbeOfServiceComponentsVersions": 8
+            "numberOfUsers": 15,
+            "numberOfHelpers": 8,
+            "numberOfAccessPoints": 10,
+            "numberOfEdgeNodes": 8,
+            "numberOfCloudNodes": 2,
+            "numberOfServiceComponentsPerService": 6,
+            "numbeOfServiceComponentsVersions": 5
         },
         "computingNodesConfig": {
             "comment": "Tier one configuration (APs data)",
@@ -153,7 +168,7 @@
         },
         "serviceConfig": {
             "comment": "Resource requiremt of all services will be between minCapacity and maxCapacity of the memory capacity pf the infrstructure. ",
-            "capacityPercentage": 0.6,
+            "capacityPercentage": 0.5,
             "internalProvider": ["K8w"],
             "externalProvider": ["AWS", "Azure", "Ericsson"],
             "codecType": ["H256", "H264"],
@@ -168,16 +183,23 @@
     "gridTuning":
     {
         "GA": {
-            "populationSizes": [200, 300, 400, 500, 600, 700, 800, 900, 1000],
-            "mutationRates": [0.01, 0.05],
+            "populationSizes": [200, 300, 400, 500, 600, 700, 800, 900],
+            "mutationRates": [0.01, 0.05, 0.1],
             "crossoverRates": [0.5, 0.6, 0.7, 0.8],
             "tournamentSelectionSize": [0.05, 0.1],
-            "iteration": 1
+            "iteration": 200
+        },
+        "PSO": {
+            "populationSize": [20, 30, 40, 50, 60, 70, 80, 90],
+            "w": [0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
+            "c1": [1.5, 1.75, 2, 2.25],
+            "c2": [1.5, 1.75, 2, 2.25],
+            "iteration": 200
         }
     },
     "address":
     {
         "ip": "localhost",
-        "port": "3000"
+        "port": "3001"
     }
 }
