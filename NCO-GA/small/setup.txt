@@ -1,0 +1,16 @@
+"Total CPU Capacity: 304109.006984398\n
+Total Memory Capacity: 667446.8695337494\n
+Total Disk Capacity: 2545.8966150224605\n
+\nCPU requirement range: 324.3829407833579,405.47867597919736\n
+Memory requrement range: 711.9433275026661,889.9291593783325\n
+Disk requirment range: 1.357811528011979,1.6972644100149736\n
+Data size range: 300,500\n
+
+\nNumber of total services: 30\n
+Number of components per service: 10\n
+Number of component versions: 6\n
+\nNumber of users: 30\n
+Number of helpers: 15\n
+Number of APs: 15\n
+Number of edge nodes: 8\n
+Number of cloud nodes: 4"
