@@ -1,0 +1,1442 @@
+[
+  {
+    "nodeID": 167,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2183.34643136823,
+      "memory": 6087.315701010959,
+      "disk": 11.926826638548349,
+      "os": "OS2",
+      "reliability": 0.9851946278713775,
+      "nodeBW": 91.3089701026851
+    }
+  },
+  {
+    "nodeID": 168,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2084.551014318422,
+      "memory": 6339.731999057215,
+      "disk": 9.099644791427266,
+      "os": "OS4",
+      "reliability": 0.9754045860776397,
+      "nodeBW": 81.821067852133
+    }
+  },
+  {
+    "nodeID": 169,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2000.5326454556052,
+      "memory": 6815.869900907652,
+      "disk": 13.447678351671689,
+      "os": "OS3",
+      "reliability": 0.976390045635315,
+      "nodeBW": 93.8951948874315
+    }
+  },
+  {
+    "nodeID": 170,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2120.4860928913654,
+      "memory": 6495.824659398371,
+      "disk": 9.973267785775066,
+      "os": "OS1",
+      "reliability": 0.9899477647503302,
+      "nodeBW": 86.7040343399789
+    }
+  },
+  {
+    "nodeID": 171,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2172.8296014027956,
+      "memory": 6318.540895704121,
+      "disk": 15.150223331387043,
+      "os": "OS4",
+      "reliability": 0.9712944461426035,
+      "nodeBW": 89.8575296230614
+    }
+  },
+  {
+    "nodeID": 172,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2002.9193272289522,
+      "memory": 6160.926858841444,
+      "disk": 15.531260389485123,
+      "os": "OS2",
+      "reliability": 0.9781259030837592,
+      "nodeBW": 108.63458874896723
+    }
+  },
+  {
+    "nodeID": 173,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2377.8867195889475,
+      "memory": 6374.8937489145965,
+      "disk": 11.07719855381247,
+      "os": "OS2",
+      "reliability": 0.9723115123977139,
+      "nodeBW": 87.79466029266321
+    }
+  },
+  {
+    "nodeID": 174,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2163.465648836146,
+      "memory": 7403.167204734175,
+      "disk": 12.190952681805792,
+      "os": "OS3",
+      "reliability": 0.9720329287291595,
+      "nodeBW": 92.86194697770095
+    }
+  },
+  {
+    "nodeID": 175,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2395.8751864015558,
+      "memory": 7548.228352145776,
+      "disk": 15.146020800577961,
+      "os": "OS3",
+      "reliability": 0.9823812766021703,
+      "nodeBW": 87.48588099124356
+    }
+  },
+  {
+    "nodeID": 176,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2089.5876652322104,
+      "memory": 6912.7679978378865,
+      "disk": 10.583654447089165,
+      "os": "OS3",
+      "reliability": 0.9748781082305094,
+      "nodeBW": 101.1243544419633
+    }
+  },
+  {
+    "nodeID": 177,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2014.3450941203025,
+      "memory": 6500.6036166800895,
+      "disk": 14.21041727788385,
+      "os": "OS1",
+      "reliability": 0.988133545306721,
+      "nodeBW": 99.62522779480528
+    }
+  },
+  {
+    "nodeID": 178,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2021.0014952508807,
+      "memory": 7789.208548484547,
+      "disk": 13.54151665628987,
+      "os": "OS2",
+      "reliability": 0.9711842890009174,
+      "nodeBW": 84.12178702707085
+    }
+  },
+  {
+    "nodeID": 179,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2468.2596910190496,
+      "memory": 7055.490839079326,
+      "disk": 8.762756767877221,
+      "os": "OS2",
+      "reliability": 0.9774724367721087,
+      "nodeBW": 86.37206592360648
+    }
+  },
+  {
+    "nodeID": 180,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2319.9729818598644,
+      "memory": 7639.059866634661,
+      "disk": 12.600529555820337,
+      "os": "OS3",
+      "reliability": 0.9718780068967464,
+      "nodeBW": 94.18695403090518
+    }
+  },
+  {
+    "nodeID": 181,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2053.5217136249967,
+      "memory": 6921.840001196639,
+      "disk": 12.317767995220052,
+      "os": "OS2",
+      "reliability": 0.9848377620036097,
+      "nodeBW": 105.37310293882854
+    }
+  },
+  {
+    "nodeID": 182,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2393.974950122527,
+      "memory": 7504.622142074816,
+      "disk": 15.443353560048738,
+      "os": "OS1",
+      "reliability": 0.9796940555064118,
+      "nodeBW": 80.10514487802384
+    }
+  },
+  {
+    "nodeID": 183,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2427.5443345232716,
+      "memory": 7097.777685880885,
+      "disk": 15.387309767306846,
+      "os": "OS1",
+      "reliability": 0.9835188186083358,
+      "nodeBW": 101.87081859510269
+    }
+  },
+  {
+    "nodeID": 184,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2453.266728409119,
+      "memory": 7977.58307940588,
+      "disk": 9.951860926201489,
+      "os": "OS3",
+      "reliability": 0.9816489054691899,
+      "nodeBW": 109.94134227642678
+    }
+  },
+  {
+    "nodeID": 185,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2144.5741878137123,
+      "memory": 6922.014597449279,
+      "disk": 14.340465511722538,
+      "os": "OS3",
+      "reliability": 0.9796589856023148,
+      "nodeBW": 81.14251607025278
+    }
+  },
+  {
+    "nodeID": 186,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2041.2265905096563,
+      "memory": 6735.584091816529,
+      "disk": 14.124988111725248,
+      "os": "OS4",
+      "reliability": 0.985332982158025,
+      "nodeBW": 100.86601526576675
+    }
+  },
+  {
+    "nodeID": 187,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2340.6474552180453,
+      "memory": 7738.76356093545,
+      "disk": 8.74727001435535,
+      "os": "OS2",
+      "reliability": 0.9728257641257465,
+      "nodeBW": 91.0850438790124
+    }
+  },
+  {
+    "nodeID": 188,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2119.644068089682,
+      "memory": 7983.291989588878,
+      "disk": 15.021273732932599,
+      "os": "OS4",
+      "reliability": 0.9864440722923155,
+      "nodeBW": 108.23411713661014
+    }
+  },
+  {
+    "nodeID": 189,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2381.6538838738975,
+      "memory": 7209.690553187049,
+      "disk": 9.30811637784396,
+      "os": "OS2",
+      "reliability": 0.9738601979160828,
+      "nodeBW": 116.00302019298312
+    }
+  },
+  {
+    "nodeID": 190,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2214.1669827154874,
+      "memory": 7809.213023953325,
+      "disk": 14.10276154234578,
+      "os": "OS1",
+      "reliability": 0.976933168517809,
+      "nodeBW": 90.72733467246395
+    }
+  },
+  {
+    "nodeID": 191,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2450.492738454858,
+      "memory": 6249.466596111318,
+      "disk": 12.803295496801804,
+      "os": "OS4",
+      "reliability": 0.9743468341147455,
+      "nodeBW": 86.79923022503851
+    }
+  },
+  {
+    "nodeID": 192,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2425.407932590534,
+      "memory": 6854.614644459395,
+      "disk": 14.559138675442124,
+      "os": "OS1",
+      "reliability": 0.9704925941361906,
+      "nodeBW": 93.7624477840008
+    }
+  },
+  {
+    "nodeID": 193,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2456.5417002647764,
+      "memory": 7750.448064548547,
+      "disk": 13.920239168276012,
+      "os": "OS4",
+      "reliability": 0.9775538540469255,
+      "nodeBW": 113.82201379680858
+    }
+  },
+  {
+    "nodeID": 194,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2164.9688437347095,
+      "memory": 6726.98564925913,
+      "disk": 11.83729691687314,
+      "os": "OS1",
+      "reliability": 0.9723572693206255,
+      "nodeBW": 102.88423778963707
+    }
+  },
+  {
+    "nodeID": 195,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2033.391598407354,
+      "memory": 7088.90871926958,
+      "disk": 14.550000473394899,
+      "os": "OS4",
+      "reliability": 0.9760308033566361,
+      "nodeBW": 88.39555098681495
+    }
+  },
+  {
+    "nodeID": 196,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2096.2342195701676,
+      "memory": 7008.606796985484,
+      "disk": 9.46260225240807,
+      "os": "OS3",
+      "reliability": 0.9725208989763569,
+      "nodeBW": 102.37629435077139
+    }
+  },
+  {
+    "nodeID": 197,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2417.5879048993143,
+      "memory": 6020.40251382242,
+      "disk": 15.885019462568819,
+      "os": "OS4",
+      "reliability": 0.9784306894836934,
+      "nodeBW": 90.6261911652525
+    }
+  },
+  {
+    "nodeID": 198,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2480.794838108491,
+      "memory": 7275.333897287782,
+      "disk": 15.265624751966941,
+      "os": "OS1",
+      "reliability": 0.973930618635369,
+      "nodeBW": 91.83949623190033
+    }
+  },
+  {
+    "nodeID": 199,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2272.624310600209,
+      "memory": 6281.149599397061,
+      "disk": 11.477925088760546,
+      "os": "OS2",
+      "reliability": 0.9895992753890667,
+      "nodeBW": 114.40676379890529
+    }
+  },
+  {
+    "nodeID": 200,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2447.312341054277,
+      "memory": 7466.848972208887,
+      "disk": 12.561690148880661,
+      "os": "OS1",
+      "reliability": 0.9803229430778514,
+      "nodeBW": 89.12338523956173
+    }
+  },
+  {
+    "nodeID": 201,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2306.4200362738925,
+      "memory": 7482.128168655948,
+      "disk": 12.90204023396504,
+      "os": "OS4",
+      "reliability": 0.9742159471455326,
+      "nodeBW": 112.12611773151139
+    }
+  },
+  {
+    "nodeID": 202,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2220.2167233171995,
+      "memory": 7396.238341858404,
+      "disk": 14.010629661857484,
+      "os": "OS1",
+      "reliability": 0.9876990130937241,
+      "nodeBW": 95.01410254231064
+    }
+  },
+  {
+    "nodeID": 203,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2350.6737465658903,
+      "memory": 6630.18024266534,
+      "disk": 13.736902552525423,
+      "os": "OS4",
+      "reliability": 0.979567263188495,
+      "nodeBW": 83.99719552444523
+    }
+  },
+  {
+    "nodeID": 204,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2403.20334899625,
+      "memory": 7724.395047281118,
+      "disk": 11.803239269130858,
+      "os": "OS1",
+      "reliability": 0.9898860112282883,
+      "nodeBW": 83.80817303888854
+    }
+  },
+  {
+    "nodeID": 205,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2187.262876240925,
+      "memory": 7274.260733878677,
+      "disk": 14.972272052992972,
+      "os": "OS2",
+      "reliability": 0.9853111621885975,
+      "nodeBW": 110.67087400444213
+    }
+  },
+  {
+    "nodeID": 206,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2419.8169003380326,
+      "memory": 7480.466291100915,
+      "disk": 14.45558514110987,
+      "os": "OS1",
+      "reliability": 0.9868604733727749,
+      "nodeBW": 115.41360489026218
+    }
+  },
+  {
+    "nodeID": 207,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2343.119299701868,
+      "memory": 7466.165772302758,
+      "disk": 9.130685032005008,
+      "os": "OS1",
+      "reliability": 0.9787195664667917,
+      "nodeBW": 115.06623514019523
+    }
+  },
+  {
+    "nodeID": 208,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2352.847709168544,
+      "memory": 7846.055917963273,
+      "disk": 12.901558653368213,
+      "os": "OS3",
+      "reliability": 0.9760277804108018,
+      "nodeBW": 102.07359449642951
+    }
+  },
+  {
+    "nodeID": 209,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2051.5398294680604,
+      "memory": 6630.49454202083,
+      "disk": 12.750049422831857,
+      "os": "OS3",
+      "reliability": 0.9784969742938441,
+      "nodeBW": 116.5734011258712
+    }
+  },
+  {
+    "nodeID": 210,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2314.315149151838,
+      "memory": 6771.752871765316,
+      "disk": 9.67484471104518,
+      "os": "OS4",
+      "reliability": 0.977400278322809,
+      "nodeBW": 116.36573998871746
+    }
+  },
+  {
+    "nodeID": 211,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2488.735753169131,
+      "memory": 6763.648855707371,
+      "disk": 14.194698682958522,
+      "os": "OS2",
+      "reliability": 0.9781004737586838,
+      "nodeBW": 95.94675695186562
+    }
+  },
+  {
+    "nodeID": 212,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2105.92122180585,
+      "memory": 7773.833680172966,
+      "disk": 14.681621555122982,
+      "os": "OS4",
+      "reliability": 0.9787852083093354,
+      "nodeBW": 108.40071706810717
+    }
+  },
+  {
+    "nodeID": 213,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2398.704888666132,
+      "memory": 6275.6522546119195,
+      "disk": 8.417625316284491,
+      "os": "OS3",
+      "reliability": 0.9742662252515545,
+      "nodeBW": 89.29888558687648
+    }
+  },
+  {
+    "nodeID": 214,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2278.64810910448,
+      "memory": 6226.873554419735,
+      "disk": 11.030344915927024,
+      "os": "OS1",
+      "reliability": 0.978053369772295,
+      "nodeBW": 93.16332426119959
+    }
+  },
+  {
+    "nodeID": 215,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2193.118233652055,
+      "memory": 7534.020888169812,
+      "disk": 14.021048926145504,
+      "os": "OS2",
+      "reliability": 0.9893964277169307,
+      "nodeBW": 81.86369726136165
+    }
+  },
+  {
+    "nodeID": 216,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2355.667190088947,
+      "memory": 7313.3640493450575,
+      "disk": 13.483350999632817,
+      "os": "OS4",
+      "reliability": 0.9742474802199672,
+      "nodeBW": 100.12405150321717
+    }
+  },
+  {
+    "nodeID": 217,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2044.6054116507796,
+      "memory": 6665.173712396057,
+      "disk": 13.676952326137027,
+      "os": "OS2",
+      "reliability": 0.9714285371985739,
+      "nodeBW": 111.08777342177794
+    }
+  },
+  {
+    "nodeID": 218,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2151.352322137732,
+      "memory": 7152.541898241962,
+      "disk": 10.732095277246986,
+      "os": "OS2",
+      "reliability": 0.9751465260519885,
+      "nodeBW": 115.44527915746758
+    }
+  },
+  {
+    "nodeID": 219,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2236.207297953859,
+      "memory": 6285.986601094384,
+      "disk": 9.354478326579743,
+      "os": "OS4",
+      "reliability": 0.9761489359810729,
+      "nodeBW": 88.83227225930706
+    }
+  },
+  {
+    "nodeID": 220,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2458.9665897215627,
+      "memory": 7850.785075328748,
+      "disk": 12.081986920974343,
+      "os": "OS2",
+      "reliability": 0.9729654214910235,
+      "nodeBW": 114.2730937495866
+    }
+  },
+  {
+    "nodeID": 221,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2021.3894220941463,
+      "memory": 6939.360061275223,
+      "disk": 11.971264890800617,
+      "os": "OS4",
+      "reliability": 0.9812615923053978,
+      "nodeBW": 88.50320523948413
+    }
+  },
+  {
+    "nodeID": 222,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2347.838168114157,
+      "memory": 7925.646172864363,
+      "disk": 9.47626726076101,
+      "os": "OS3",
+      "reliability": 0.9785021515644254,
+      "nodeBW": 83.37783780861827
+    }
+  },
+  {
+    "nodeID": 223,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2171.0310687455794,
+      "memory": 7072.722862713008,
+      "disk": 9.557857450185187,
+      "os": "OS1",
+      "reliability": 0.9854389547016891,
+      "nodeBW": 101.22538216837648
+    }
+  },
+  {
+    "nodeID": 224,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2180.970139541189,
+      "memory": 7698.59028056341,
+      "disk": 8.533643323239616,
+      "os": "OS1",
+      "reliability": 0.9748569655474497,
+      "nodeBW": 99.77496353960017
+    }
+  },
+  {
+    "nodeID": 225,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2317.794315998801,
+      "memory": 6105.476813138218,
+      "disk": 10.940193120913369,
+      "os": "OS3",
+      "reliability": 0.9789018027874036,
+      "nodeBW": 87.8639786024514
+    }
+  },
+  {
+    "nodeID": 226,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2323.6284195659377,
+      "memory": 6268.853595070265,
+      "disk": 14.743279755405062,
+      "os": "OS1",
+      "reliability": 0.9771922292740266,
+      "nodeBW": 99.75394815752156
+    }
+  },
+  {
+    "nodeID": 227,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2238.969506149102,
+      "memory": 6530.783263290877,
+      "disk": 13.676122233392869,
+      "os": "OS4",
+      "reliability": 0.97379536695961,
+      "nodeBW": 103.21807103295411
+    }
+  },
+  {
+    "nodeID": 228,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2399.4723801835203,
+      "memory": 7634.419807390702,
+      "disk": 9.14820978437111,
+      "os": "OS3",
+      "reliability": 0.9716615880888636,
+      "nodeBW": 92.43933628577888
+    }
+  },
+  {
+    "nodeID": 229,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2347.2204159760126,
+      "memory": 7223.156067347586,
+      "disk": 14.213105125460531,
+      "os": "OS4",
+      "reliability": 0.9799769575340683,
+      "nodeBW": 108.35385429964269
+    }
+  },
+  {
+    "nodeID": 230,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2340.0779601328077,
+      "memory": 6747.543637436275,
+      "disk": 8.704170134759309,
+      "os": "OS1",
+      "reliability": 0.9740449314549324,
+      "nodeBW": 107.47460630784911
+    }
+  },
+  {
+    "nodeID": 231,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2230.5480786836843,
+      "memory": 6456.0804103847995,
+      "disk": 12.372482089351912,
+      "os": "OS4",
+      "reliability": 0.9829742931109189,
+      "nodeBW": 119.36364417943435
+    }
+  },
+  {
+    "nodeID": 232,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2000.4628518979948,
+      "memory": 7355.298361434861,
+      "disk": 13.03648953297639,
+      "os": "OS1",
+      "reliability": 0.9827441361041972,
+      "nodeBW": 114.71861551610604
+    }
+  },
+  {
+    "nodeID": 233,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2456.6185225020245,
+      "memory": 7692.791684844962,
+      "disk": 11.621012936285123,
+      "os": "OS4",
+      "reliability": 0.9741426891082955,
+      "nodeBW": 80.40109542654089
+    }
+  },
+  {
+    "nodeID": 234,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2378.185389147336,
+      "memory": 6989.162621714579,
+      "disk": 14.557890351498019,
+      "os": "OS4",
+      "reliability": 0.9839452853201834,
+      "nodeBW": 99.6839771739053
+    }
+  },
+  {
+    "nodeID": 235,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2086.8236357214914,
+      "memory": 7887.219578138202,
+      "disk": 15.288964468448292,
+      "os": "OS1",
+      "reliability": 0.9729519340162559,
+      "nodeBW": 117.20722605252382
+    }
+  },
+  {
+    "nodeID": 236,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2434.163515836644,
+      "memory": 6742.421492400542,
+      "disk": 14.186593311690944,
+      "os": "OS4",
+      "reliability": 0.9811039343166428,
+      "nodeBW": 105.33209315417959
+    }
+  },
+  {
+    "nodeID": 237,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2218.8989138401935,
+      "memory": 7211.397477647194,
+      "disk": 8.937478985218172,
+      "os": "OS4",
+      "reliability": 0.9786735698851197,
+      "nodeBW": 110.59507246861557
+    }
+  },
+  {
+    "nodeID": 238,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2245.0410615976225,
+      "memory": 7043.823774106072,
+      "disk": 8.018446894324395,
+      "os": "OS2",
+      "reliability": 0.9809575485998955,
+      "nodeBW": 99.92910625596053
+    }
+  },
+  {
+    "nodeID": 239,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2079.85048628345,
+      "memory": 6961.044591307105,
+      "disk": 12.718057413058974,
+      "os": "OS2",
+      "reliability": 0.9745212313725078,
+      "nodeBW": 87.78617511027973
+    }
+  },
+  {
+    "nodeID": 240,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2497.466144785053,
+      "memory": 7332.928514087117,
+      "disk": 12.95982817782013,
+      "os": "OS4",
+      "reliability": 0.9866324891369623,
+      "nodeBW": 103.37170886758415
+    }
+  },
+  {
+    "nodeID": 241,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2439.8469702017487,
+      "memory": 7136.19110527051,
+      "disk": 10.752912671462514,
+      "os": "OS1",
+      "reliability": 0.9799572825699018,
+      "nodeBW": 93.08912770913614
+    }
+  },
+  {
+    "nodeID": 242,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2083.3467855384397,
+      "memory": 7494.355386291789,
+      "disk": 10.807555959506473,
+      "os": "OS1",
+      "reliability": 0.9786742143479094,
+      "nodeBW": 119.18958936984743
+    }
+  },
+  {
+    "nodeID": 243,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2131.7169570027027,
+      "memory": 7385.469206576266,
+      "disk": 8.460832583138851,
+      "os": "OS4",
+      "reliability": 0.9717940162034688,
+      "nodeBW": 82.76947945429028
+    }
+  },
+  {
+    "nodeID": 244,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2146.5862570935137,
+      "memory": 6665.567889364413,
+      "disk": 12.652413885524913,
+      "os": "OS3",
+      "reliability": 0.9765079865284816,
+      "nodeBW": 116.00571196757812
+    }
+  },
+  {
+    "nodeID": 245,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2196.0668454995366,
+      "memory": 7751.515479980133,
+      "disk": 12.10271456503355,
+      "os": "OS3",
+      "reliability": 0.9884306571927118,
+      "nodeBW": 104.01244137066897
+    }
+  },
+  {
+    "nodeID": 246,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2355.507777131879,
+      "memory": 7512.703640418128,
+      "disk": 10.12429733713167,
+      "os": "OS4",
+      "reliability": 0.9863411625023015,
+      "nodeBW": 98.16921898312691
+    }
+  },
+  {
+    "nodeID": 247,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2206.5478443712273,
+      "memory": 7697.705213703443,
+      "disk": 11.39572702405484,
+      "os": "OS3",
+      "reliability": 0.9762857975378826,
+      "nodeBW": 88.23128602200296
+    }
+  },
+  {
+    "nodeID": 248,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2052.8572499272505,
+      "memory": 6788.475106771985,
+      "disk": 15.269984295281528,
+      "os": "OS2",
+      "reliability": 0.9740225232303644,
+      "nodeBW": 95.17355946271705
+    }
+  },
+  {
+    "nodeID": 249,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2014.9800381132172,
+      "memory": 7211.344716816911,
+      "disk": 12.528869674700173,
+      "os": "OS2",
+      "reliability": 0.9709306501753181,
+      "nodeBW": 95.55381795009212
+    }
+  },
+  {
+    "nodeID": 250,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2336.5338901466625,
+      "memory": 6475.951421244953,
+      "disk": 12.618567479524483,
+      "os": "OS1",
+      "reliability": 0.986169201095607,
+      "nodeBW": 106.25183225579048
+    }
+  },
+  {
+    "nodeID": 251,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2060.178963521856,
+      "memory": 6254.943510915385,
+      "disk": 8.832066673064142,
+      "os": "OS3",
+      "reliability": 0.9871417623990446,
+      "nodeBW": 92.46466202837027
+    }
+  },
+  {
+    "nodeID": 252,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2459.356099276903,
+      "memory": 7474.70571865359,
+      "disk": 9.740635276785943,
+      "os": "OS3",
+      "reliability": 0.9740920775413298,
+      "nodeBW": 100.87721844197603
+    }
+  },
+  {
+    "nodeID": 253,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2183.4140969640303,
+      "memory": 6997.0111026602335,
+      "disk": 8.37863939412261,
+      "os": "OS3",
+      "reliability": 0.9838098865399507,
+      "nodeBW": 110.51937555988289
+    }
+  },
+  {
+    "nodeID": 254,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2039.8048404528902,
+      "memory": 7073.151437968818,
+      "disk": 9.382751170596501,
+      "os": "OS3",
+      "reliability": 0.9709295500490398,
+      "nodeBW": 91.0201115577219
+    }
+  },
+  {
+    "nodeID": 255,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2461.105801503902,
+      "memory": 7640.966766143507,
+      "disk": 11.550363836834894,
+      "os": "OS3",
+      "reliability": 0.984870107783644,
+      "nodeBW": 111.13732322442314
+    }
+  },
+  {
+    "nodeID": 256,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2245.7125198261915,
+      "memory": 7226.660765278424,
+      "disk": 8.792984938909395,
+      "os": "OS3",
+      "reliability": 0.9899355514033498,
+      "nodeBW": 106.74318311568183
+    }
+  },
+  {
+    "nodeID": 257,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2296.0775949937,
+      "memory": 6048.969800568649,
+      "disk": 10.676516311091437,
+      "os": "OS2",
+      "reliability": 0.9893453381997304,
+      "nodeBW": 107.22065470898744
+    }
+  },
+  {
+    "nodeID": 258,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2357.7174503716906,
+      "memory": 6784.0183948076965,
+      "disk": 10.293830492001558,
+      "os": "OS1",
+      "reliability": 0.9822501420971405,
+      "nodeBW": 82.68547847389465
+    }
+  },
+  {
+    "nodeID": 259,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2100.9349948538897,
+      "memory": 6459.075207694295,
+      "disk": 11.05961075622201,
+      "os": "OS2",
+      "reliability": 0.9881706450730843,
+      "nodeBW": 119.70420572123734
+    }
+  },
+  {
+    "nodeID": 260,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2212.7909945522388,
+      "memory": 6302.725006208989,
+      "disk": 9.934767215119356,
+      "os": "OS3",
+      "reliability": 0.9795986433785827,
+      "nodeBW": 82.87428370445406
+    }
+  },
+  {
+    "nodeID": 261,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2135.415803158027,
+      "memory": 7100.548949030377,
+      "disk": 11.475103999482158,
+      "os": "OS4",
+      "reliability": 0.9859538446602832,
+      "nodeBW": 109.56590951451379
+    }
+  },
+  {
+    "nodeID": 262,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2052.754903692232,
+      "memory": 6612.925030576567,
+      "disk": 11.586318163984735,
+      "os": "OS2",
+      "reliability": 0.984500712715357,
+      "nodeBW": 80.57500268174101
+    }
+  },
+  {
+    "nodeID": 263,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2075.4353172768087,
+      "memory": 7503.409360880226,
+      "disk": 13.442382130179746,
+      "os": "OS2",
+      "reliability": 0.9808041821865292,
+      "nodeBW": 84.12344337465079
+    }
+  },
+  {
+    "nodeID": 264,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2227.3246581419835,
+      "memory": 6904.525307732789,
+      "disk": 12.021528747235106,
+      "os": "OS3",
+      "reliability": 0.9769759399432075,
+      "nodeBW": 106.12000644706688
+    }
+  },
+  {
+    "nodeID": 265,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2180.6066413644203,
+      "memory": 7293.7904287025,
+      "disk": 14.95298018906359,
+      "os": "OS4",
+      "reliability": 0.9882087725581196,
+      "nodeBW": 102.57691174624098
+    }
+  },
+  {
+    "nodeID": 266,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2482.429179927106,
+      "memory": 6887.855312655967,
+      "disk": 15.893616178029818,
+      "os": "OS1",
+      "reliability": 0.9730930041180016,
+      "nodeBW": 86.03821840904021
+    }
+  },
+  {
+    "nodeID": 267,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2422.3776965989164,
+      "memory": 7698.766268403075,
+      "disk": 9.356908002330158,
+      "os": "OS3",
+      "reliability": 0.9895328795185669,
+      "nodeBW": 107.7097791809763
+    }
+  },
+  {
+    "nodeID": 268,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2311.6401333514145,
+      "memory": 6539.958100553917,
+      "disk": 15.793625011910898,
+      "os": "OS2",
+      "reliability": 0.9765368624230851,
+      "nodeBW": 108.7042551665134
+    }
+  },
+  {
+    "nodeID": 269,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2250.651978956705,
+      "memory": 6336.229351268942,
+      "disk": 12.452157158937728,
+      "os": "OS2",
+      "reliability": 0.9788638026206465,
+      "nodeBW": 115.26668978516084
+    }
+  },
+  {
+    "nodeID": 270,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2165.988371762284,
+      "memory": 7423.389438050079,
+      "disk": 8.373582755126282,
+      "os": "OS2",
+      "reliability": 0.9708927094803593,
+      "nodeBW": 88.89285708875244
+    }
+  },
+  {
+    "nodeID": 271,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2471.934661769659,
+      "memory": 7703.235644180064,
+      "disk": 11.341261153244133,
+      "os": "OS4",
+      "reliability": 0.9811669066100025,
+      "nodeBW": 104.7425123978177
+    }
+  },
+  {
+    "nodeID": 272,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2439.6457638765073,
+      "memory": 6045.0028129908915,
+      "disk": 15.96567163705386,
+      "os": "OS2",
+      "reliability": 0.9880096966053137,
+      "nodeBW": 108.66183299205963
+    }
+  },
+  {
+    "nodeID": 273,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2453.879459189392,
+      "memory": 6522.019652521676,
+      "disk": 14.692129599262499,
+      "os": "OS3",
+      "reliability": 0.9881071937357889,
+      "nodeBW": 96.65726300903071
+    }
+  },
+  {
+    "nodeID": 274,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2464.4722567335757,
+      "memory": 6659.390407798704,
+      "disk": 8.240481131185382,
+      "os": "OS3",
+      "reliability": 0.989006880479651,
+      "nodeBW": 101.8926093136926
+    }
+  },
+  {
+    "nodeID": 275,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2029.9397371719383,
+      "memory": 6943.890567496926,
+      "disk": 12.362232193619615,
+      "os": "OS3",
+      "reliability": 0.9803962389910845,
+      "nodeBW": 107.0451857745007
+    }
+  },
+  {
+    "nodeID": 276,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2053.350997001381,
+      "memory": 7893.1184449171615,
+      "disk": 13.635154118095494,
+      "os": "OS4",
+      "reliability": 0.9824992627980053,
+      "nodeBW": 101.93037963475005
+    }
+  },
+  {
+    "nodeID": 277,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2105.1278203853763,
+      "memory": 7701.894373044008,
+      "disk": 10.248350784051121,
+      "os": "OS3",
+      "reliability": 0.9840897282233952,
+      "nodeBW": 112.82814409249525
+    }
+  },
+  {
+    "nodeID": 278,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2031.1123378754662,
+      "memory": 6698.187951617039,
+      "disk": 8.61588694537557,
+      "os": "OS3",
+      "reliability": 0.9806399946099478,
+      "nodeBW": 111.5963454633082
+    }
+  },
+  {
+    "nodeID": 279,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2062.994741433301,
+      "memory": 6229.585162439744,
+      "disk": 8.792327063062881,
+      "os": "OS3",
+      "reliability": 0.9733363594960286,
+      "nodeBW": 86.23610331964501
+    }
+  },
+  {
+    "nodeID": 280,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2480.3859574390585,
+      "memory": 7903.922350785447,
+      "disk": 11.876433767974168,
+      "os": "OS3",
+      "reliability": 0.9857290554877353,
+      "nodeBW": 118.56363062151874
+    }
+  },
+  {
+    "nodeID": 281,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2092.0824447522887,
+      "memory": 6745.572453849702,
+      "disk": 12.272373173341913,
+      "os": "OS2",
+      "reliability": 0.9769808285990675,
+      "nodeBW": 84.10667020273414
+    }
+  },
+  {
+    "nodeID": 282,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2049.5827408597625,
+      "memory": 6933.645357068707,
+      "disk": 8.161714001786883,
+      "os": "OS4",
+      "reliability": 0.9706327462137682,
+      "nodeBW": 96.44008910785911
+    }
+  },
+  {
+    "nodeID": 283,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2183.70003978253,
+      "memory": 7223.542850142756,
+      "disk": 9.44454472013192,
+      "os": "OS4",
+      "reliability": 0.9890933899568422,
+      "nodeBW": 102.50870976448857
+    }
+  },
+  {
+    "nodeID": 284,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2413.2538270180744,
+      "memory": 7122.708272350823,
+      "disk": 15.66057268159975,
+      "os": "OS2",
+      "reliability": 0.9864837058133602,
+      "nodeBW": 89.88827036302565
+    }
+  },
+  {
+    "nodeID": 285,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2361.0481222695153,
+      "memory": 6325.086994153212,
+      "disk": 12.407794104129685,
+      "os": "OS3",
+      "reliability": 0.980820695365315,
+      "nodeBW": 100.62959009450543
+    }
+  },
+  {
+    "nodeID": 286,
+    "nodeTier": 0,
+    "characteristics": {
+      "cpu": 2271.7156125223014,
+      "memory": 7008.969677831012,
+      "disk": 8.289823545108286,
+      "os": "OS1",
+      "reliability": 0.9748685529691304,
+      "nodeBW": 91.25937640211878
+    }
+  }
+]
