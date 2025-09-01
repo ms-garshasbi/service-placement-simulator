@@ -257,89 +257,113 @@ class computingNodesGenerator {
                 {
                     nodeConnections[i][j] = [
                         0,
+                        0,
                         0
                     ];
                 }
-                else if (i < numCNTier1 && j < numCNTier1) //Tier1
+                else if (i < numCNTier1 && j < numCNTier1) //Inside of Tier1
                 {
+                    const bw = Math.floor(getRandomValue(this.minBandwidthInTier1, this.maxBandwidthInTier1))
                     nodeConnections[i][j] = [
-                            Math.floor(getRandomValue(this.minBandwidthInTier1, this.maxBandwidthInTier1)),
-                            getRandomValue(this.minRttInTier1, this.maxRttInTier1)
+                            bw,
+                            Number(getRandomValue(this.minRttInTier1, this.maxRttInTier1).toFixed(4)),
+                            bw
                         ];
                 }
-                else if (i >= numCNTier1 && i < numCNTier1 + numCNTier2 && j >= numCNTier1 && j < numCNTier1 + numCNTier2) //Tier2
+                else if (i >= numCNTier1 && i < numCNTier1 + numCNTier2 && j >= numCNTier1 && j < numCNTier1 + numCNTier2) //Inside of Tier2
                 {
+                    const bw = Math.floor(getRandomValue(this.minBandwidthInTier2, this.maxBandwidthInTier2))
                     nodeConnections[i][j] = [
-                            Math.floor(getRandomValue(this.minBandwidthInTier2, this.maxBandwidthInTier2)),
-                            getRandomValue(this.minRttInTier2, this.maxRttInTier2)
+                            bw,
+                            Number(getRandomValue(this.minRttInTier2, this.maxRttInTier2).toFixed(4)),
+                            bw
                         ];
                 }
-                else if (i >= numCNTier1 + numCNTier2 && i < numCNTier1 + numCNTier2 + numCNTier3 && j >= numCNTier1 + numCNTier2 && j < numCNTier1 + numCNTier2 + numCNTier3) //Tier3
+                else if (i >= numCNTier1 + numCNTier2 && i < numCNTier1 + numCNTier2 + numCNTier3 && j >= numCNTier1 + numCNTier2 && j < numCNTier1 + numCNTier2 + numCNTier3) //Inside of Tier3
                 {
+                    const bw = Math.floor(getRandomValue(this.minBandwidthInTier3, this.maxBandwidthInTier3))
                     nodeConnections[i][j] = [
-                        Math.floor(getRandomValue(this.minBandwidthInTier3, this.maxBandwidthInTier3)),
-                        getRandomValue(this.minRttInTier3, this.maxRttInTier3)
+                        bw,
+                        Number(getRandomValue(this.minRttInTier3, this.maxRttInTier3).toFixed(4)),
+                        bw
                     ];
                 }
                 else if (i < numCNTier1 && j >= numCNTier1 && j < numCNTier1 + numCNTier2) //Tier1  to Tier 2
                 {
+                    const bw = Math.floor(getRandomValue(this.minBandwidthFromTier1ToTier2, this.maxBandwidthFromTier1ToTier2))
                     nodeConnections[i][j] = [
-                        Math.floor(getRandomValue(this.minBandwidthFromTier1ToTier2, this.maxBandwidthFromTier1ToTier2)),
-                        getRandomValue(this.minRttFromTier1ToTier2, this.maxRttFromTier1ToTier2)
+                        bw,
+                        Number(getRandomValue(this.minRttFromTier1ToTier2, this.maxRttFromTier1ToTier2).toFixed(4)),
+                        bw
                     ];
                 }
                 else if (i < numCNTier1 && j >= numCNTier1 + numCNTier2 && j < numCNTier1 + numCNTier2 + numCNTier3) //Tier1  to Tier 3
                 {
+                    const bw =  Math.floor(getRandomValue(this.minBandwidthFromTier1ToTier3, this.maxBandwidthFromTier1ToTier3))
                     nodeConnections[i][j] = [
-                        Math.floor(getRandomValue(this.minBandwidthFromTier1ToTier3, this.maxBandwidthFromTier1ToTier3)),
-                        getRandomValue(this.minRttFromTier1ToTier3, this.maxRttFromTier1ToTier3)
+                       bw,
+                        Number(getRandomValue(this.minRttFromTier1ToTier3, this.maxRttFromTier1ToTier3).toFixed(4)),
+                        bw
                     ];
                 }
                 else if (i >= numCNTier1 && i < numCNTier1 + numCNTier2 && j >= numCNTier1 + numCNTier2 && j < numCNTier1 + numCNTier2 + numCNTier3) //Tier2  to Tier 3
                 {
+                    const bw = Math.floor(getRandomValue(this.minBandwidthFromTier2ToTier3, this.maxBandwidthFromTier2ToTier3))
                     nodeConnections[i][j] = [
-                        Math.floor(getRandomValue(this.minBandwidthFromTier2ToTier3, this.maxBandwidthFromTier2ToTier3)),
-                        getRandomValue(this.minRttFromTier2ToTier3, this.maxRttFromTier2ToTier3)
+                        bw,
+                        Number(getRandomValue(this.minRttFromTier2ToTier3, this.maxRttFromTier2ToTier3).toFixed(4)),
+                        bw
                     ];
                 }
-                else if (i < numCNTier1 && j >= numCNTier1 + numCNTier2 + numCNTier3 && j < numCNTier1 + numCNTier2 + numCNTier3 + this.numUsers) //Users to Tier1
+                else if (i < numCNTier1 && j >= numCNTier1 + numCNTier2 + numCNTier3 && j < numCNTier1 + numCNTier2 + numCNTier3 + this.numHelpers) //Users to Tier1
                 {
+                    const bw = Math.floor(getRandomValue(this.minBandwidthFromUserToTier1, this.maxBandwidthFromUserToTier1))
                     nodeConnections[i][j] = [
-                        Math.floor(getRandomValue(this.minBandwidthFromUserToTier1, this.maxBandwidthFromUserToTier1)),
-                        getRandomValue(this.minRttFromUserToTier1, this.maxRttFromUserToTier1)
+                        bw,
+                        Number(getRandomValue(this.minRttFromUserToTier1, this.maxRttFromUserToTier1).toFixed(4)),
+                        bw
                     ];
                 }
-                else if (i >= numCNTier1 && i < numCNTier1 + numCNTier2 && j >= numCNTier1 + numCNTier2 + numCNTier3 && j < numCNTier1 + numCNTier2 + numCNTier3 + this.numUsers) //Users to Tier2
+                else if (i >= numCNTier1 && i < numCNTier1 + numCNTier2 && j >= numCNTier1 + numCNTier2 + numCNTier3 && j < numCNTier1 + numCNTier2 + numCNTier3 + this.numHelpers) //Users to Tier2
                 {
+                    const bw = Math.floor(getRandomValue(this.minBandwidthFromUserToTier2, this.maxBandwidthFromUserToTier2))
                     nodeConnections[i][j] = [
-                        Math.floor(getRandomValue(this.minBandwidthFromUserToTier2, this.maxBandwidthFromUserToTier2)),
-                        getRandomValue(this.minRttFromUserToTier2, this.maxRttFromUserToTier2)
+                        bw,
+                        Number(getRandomValue(this.minRttFromUserToTier2, this.maxRttFromUserToTier2).toFixed(4)),
+                        bw
                     ];
                 }
-                else if (i >= numCNTier1 + numCNTier2 && i < numCNTier1 + numCNTier2 + numCNTier3 && j >= numCNTier1 + numCNTier2 + numCNTier3 && j < numCNTier1 + numCNTier2 + numCNTier3 + this.numUsers) //Users to Tier3
+                else if (i >= numCNTier1 + numCNTier2 && i < numCNTier1 + numCNTier2 + numCNTier3 && j >= numCNTier1 + numCNTier2 + numCNTier3 && j < numCNTier1 + numCNTier2 + numCNTier3 + this.numHelpers) //Users to Tier3
                 {
+                    const bw = Math.floor(getRandomValue(this.minBandwidthFromUserToTier3, this.maxBandwidthFromUserToTier3))
                     nodeConnections[i][j] = [
-                        Math.floor(getRandomValue(this.minBandwidthFromUserToTier3, this.maxBandwidthFromUserToTier3)),
-                        getRandomValue(this.minRttFromUserToTier3, this.maxRttFromUserToTier3)
+                        bw,
+                        Number(getRandomValue(this.minRttFromUserToTier3, this.maxRttFromUserToTier3).toFixed(4)),
+                        bw
                     ];
                 }
-                else if (i < numCNTier1 + numCNTier2 + numCNTier3 && j >= numCNTier1 + numCNTier2 + numCNTier3 + this.numUsers && j < numCNTier1 + numCNTier2 + numCNTier3 + this.numUsers + this.numHelpers) //Helpers to infrastructure
+                else if (i < numCNTier1 + numCNTier2 + numCNTier3 && j >= numCNTier1 + numCNTier2 + numCNTier3 + this.numHelpers && j < numCNTier1 + numCNTier2 + numCNTier3 + this.numHelpers + this.numUsers) //Helpers to infrastructure
                 {
+                    const bw = Math.floor(getRandomValue(this.minBandwidthFromHelperToInfrastructure, this.maxBandwidthFromHelperToInfrastructure))
                     nodeConnections[i][j] = [
-                        Math.floor(getRandomValue(this.minBandwidthFromHelperToInfrastructure, this.maxBandwidthFromHelperToInfrastructure)),
-                        getRandomValue(this.minRttFromHelperToInfrastructure, this.maxRttFromHelperToInfrastructure)
+                        bw,
+                        Number(getRandomValue(this.minRttFromHelperToInfrastructure, this.maxRttFromHelperToInfrastructure).toFixed(4)),
+                        bw
                     ];
                 }
-                else if (i >= numCNTier1 + numCNTier2 + numCNTier3 && i < numCNTier1 + numCNTier2 + numCNTier3 + this.numUsers && j >= numCNTier1 + numCNTier2 + numCNTier3 + this.numUsers && j < numCNTier1 + numCNTier2 + numCNTier3 + this.numUsers + this.numHelpers) //Users to helpers
+                else if (i >= numCNTier1 + numCNTier2 + numCNTier3 && i < numCNTier1 + numCNTier2 + numCNTier3 + this.numHelpers && j >= numCNTier1 + numCNTier2 + numCNTier3 + this.numHelpers && j < numCNTier1 + numCNTier2 + numCNTier3 + this.numHelpers + this.numUsers) //Users to helpers
                 {
+                    const bw = Math.floor(getRandomValue(this.minBandwidthFromUsersToHelpers, this.maxBandwidthFromUsersToHelpers))
                     nodeConnections[i][j] = [
-                        Math.floor(getRandomValue(this.minBandwidthFromUsersToHelpers, this.maxBandwidthFromUsersToHelpers)),
-                        getRandomValue(this.minRttFromHelperUsersToHelpers, this.maxRttFromHelperUsersToHelpers)
+                        bw,
+                        Number(getRandomValue(this.minRttFromHelperUsersToHelpers, this.maxRttFromHelperUsersToHelpers).toFixed(4)),
+                        bw
                     ];
                 }
                 else
                 {
                     nodeConnections[i][j] = [
+                        0,
                         0,
                         0
                     ];
@@ -355,7 +379,7 @@ class computingNodesGenerator {
 
         }
 
-        fs.writeFile('./newUsecase/infraConnections.json', JSON.stringify(nodeConnections), (err) => {
+        fs.writeFile(`./${configurations['scale']}/infraConnections.json`, JSON.stringify(nodeConnections), (err) => {
             if (err) {
               console.error('Error writing file:', err);
             }
@@ -1300,3 +1324,4 @@ else if (configurations['type'] == 'optConfig')
 {
     cmd.optConfigCommand();
 }
+
