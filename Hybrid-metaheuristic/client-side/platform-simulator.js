@@ -28,17 +28,6 @@ function sendAxiosPost(url, dataObj) {
             }
             return acc;
             }, {});
-        
-        // const flattenedData = flattenObject(res.data);
-        
-        // const titles = Object.keys(flattenedData).join(',');
-        // const values = Object.values(flattenedData).join(',');
-
-        // const csvContent = `${titles}\n${values}`;
-        // const filePath = path.join(__dirname, 'output.csv');
-        
-        // fs.writeFileSync(filePath, csvContent);
-        // console.log(`CSV file saved at ${filePath}`);
         })
         .catch((err) => {
             // This will catch both timeout and other network issues
@@ -1188,5 +1177,6 @@ else if (configurations['type'] == 'optConfig')
 {
     cmd.optConfigCommand();
 }
+
 
 
