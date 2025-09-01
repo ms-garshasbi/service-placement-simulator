@@ -712,149 +712,6 @@ class serviceGenerator {
 
     }
 
-    // generate2()
-    // {
-    //     //Computation
-    //     const platformComputational = this.platformComputationalCapacity * getRandomValue(this.minCapacity, this.maxCapacity);
-    //     const requieredCPU = [this.minCPUMIPS , this.maxCPUMIPS];
-    //     const numServiceComponents = Math.floor(((platformComputational / requieredCPU[0]) + (platformComputational / requieredCPU[1])) / 2);
-
-    //     //Disk
-    //     const platformDisk = this.platformDiskCapacity * getRandomValue(0.2, 0.3);
-    //     const requiredDiskMean = platformDisk / numServiceComponents //Mean
-    //     const requiredDisk = [Math.floor(requiredDiskMean * 0.7), Math.floor(requiredDiskMean * 1.2)]; //30 percentage (above/below) of the mean
-
-    //     //Memory
-    //     const platformMemory = this.platformMemoryCapacity * getRandomValue(this.minCapacity, this.maxCapacity);
-    //     const requiredMemoryMean = platformMemory / numServiceComponents //Mean
-    //     const requiredMemory = [Math.floor(requiredMemoryMean * 0.7), Math.floor(requiredMemoryMean * 1.2)]; //30 percentage (above/below) of the mean
-
-    //     //Network
-    //     const platformNetwork = this.platformNetworkCapacity * getRandomValue(this.minCapacity, this.maxCapacity);
-    //     const requiredNetworkMean = platformNetwork / numServiceComponents //Mean
-    //     const requiredNetwork = [Math.floor(requiredNetworkMean * 0.7), Math.floor(requiredNetworkMean * 1.2)]; //30 percentage (above/below) of the mean
-
-    //     let CPUversions = [];
-    //     let memoryVersions = [];
-    //     let diskVersions = [];
-    //     let dataSizeVersions = [];
-
-    //     for (let i = 0; i < this.numVersions; i++)
-    //     {
-    //         //Computation
-    //         let newArrayCPU = Array.from({ length: numServiceComponents }, () => requieredCPU[0]);
-    //         let totalSumCPU = newArrayCPU.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-    //         while (platformComputational > totalSumCPU)
-    //         {
-    //             totalSumCPU = newArrayCPU.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-    //             const min = Math.min(...newArrayCPU);
-    //             const minIndex = newArrayCPU.indexOf(min);
-    //             newArrayCPU[minIndex] = getRandomValue(requieredCPU[0], requieredCPU[1]);
-    //             newArrayCPU = this.shuffleArray([...newArrayCPU]);
-    //         }
-    //         CPUversions.push(newArrayCPU);
-            
-    //         //Disk
-    //         let newArrayDisk = Array.from({ length: numServiceComponents }, () => requiredDisk[0]);
-    //         let totalSumDisk = newArrayDisk.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-    //         while (platformDisk > totalSumDisk)
-    //         {
-    //             totalSumDisk = newArrayDisk.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-    //             const min = Math.min(...newArrayDisk);
-    //             const minIndex = newArrayDisk.indexOf(min);
-    //             newArrayDisk[minIndex] = getRandomValue(requiredDisk[0], requiredDisk[1]);
-    //             newArrayDisk = this.shuffleArray([...newArrayDisk]);
-    //         }
-    //         diskVersions.push(newArrayDisk);
-
-    //         //Memory
-    //         let newArrayMemory = Array.from({ length: numServiceComponents }, () => requiredMemory[0]);
-    //         let totalSumMemory = newArrayMemory.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-    //         while (platformMemory > totalSumMemory)
-    //         {
-    //             totalSumMemory = newArrayMemory.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-    //             const min = Math.min(...newArrayMemory);
-    //             const minIndex = newArrayMemory.indexOf(min);
-    //             newArrayMemory[minIndex] = getRandomValue(requiredMemory[0], requiredMemory[1]);
-    //             newArrayMemory = this.shuffleArray([...newArrayMemory]);
-    //         }
-    //         memoryVersions.push(newArrayMemory);
-
-    //         // //Data size
-    //         // let newArrayNetwork = Array.from({ length: numServiceComponents }, () => requiredNetwork[0]);
-    //         // let totalSumNetwork = newArrayNetwork.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-    //         // while (platformNetwork > totalSumNetwork)
-    //         // {
-    //         //     totalSumNetwork = newArrayNetwork.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-    //         //     const min = Math.min(...newArrayNetwork);
-    //         //     const minIndex = newArrayNetwork.indexOf(min);
-    //         //     newArrayNetwork[minIndex] = getRandomValue(requiredNetwork[0], requiredNetwork[1]);
-    //         //     newArrayNetwork = this.shuffleArray([...newArrayNetwork]);
-    //         // }
-    //         // dataSizeVersions.push(newArrayNetwork);
-    //     }
-
-    //     const numServicesCompnentEach = Math.floor(numServiceComponents / this.numUsers);
-    //     let jsonResult = [];
-    //     let comID = 1;
-    //     let cT = 0;
-    //     let hID = this.numComputingNodes + 1
-    //     let uID = this.numComputingNodes + this.numHelpers + 1;
-    //     const sT = this.numUsers;
-    //     for(let s = 0; s < sT; s++)
-    //     {
-    //         const service = {
-    //             serviceID: s + 1,
-    //             components: [],
-    //             userID: uID,
-    //             helperID: hID
-    //         }
-    //         uID++;
-    //         hID++;
-    //         if (hID >= this.numComputingNodes + 1 + this.numHelpers)
-    //         {
-    //             hID = this.numComputingNodes + 1;
-    //         }
-    //         for (let c = 0; c < numServicesCompnentEach; c++)
-    //         {
-    //             const component = {
-    //                 componentID: comID,
-    //                 versions: []
-    //             };
-    //             for (let v = 0; v < this.numVersions; v++)
-    //             {
-    //                 const version = {
-    //                     versionNumber: v + 1,
-    //                     characteristics: {
-    //                         cpu: CPUversions[v][cT],
-    //                         memory: memoryVersions[v][cT],
-    //                         dataSize: getRandomValue(this.minDataSizeCommunication,this.maxDataSizeCommunication),
-    //                         disk: diskVersions[v][cT],
-    //                         provider: this.getProvider(),
-    //                         codecType: this.getCodecType(),
-    //                         reliabilityScore: this.getReliabilityScore(this.minReliability, this.maxReliability)
-    //                     }
-    //                 };
-    //                 component.versions.push(version);
-    //             }
-    //             comID++;
-    //             cT++;
-    //             service.components.push(component);
-    //         }
-    //         comID = 1;
-    //         jsonResult.push(service);
-    //     }
-    //     return {
-    //         services: jsonResult,
-    //         min_max_CPUrequired: requieredCPU,
-    //         min_max_MAMORYrequired: requiredMemory,
-    //         min_max_DISKrequired: requiredDisk,
-    //         //min_max_DATASIZE: requiredNetwork,
-    //         num_serviceComponentEach: numServicesCompnentEach,
-    //         num_services: jsonResult.length
-    //     }
-    // }
-
     requiredCapacity(services)
     {
         let totalComputationalRequirement = 0;
@@ -891,7 +748,15 @@ class serviceGenerator {
             for (let j = 0; j < numComponents; j++) 
             {
                 {
-                    if (j > i && Math.random() < 0.7) // 70% of service components are connected in service chain
+                    if (j > i+1 && Math.random() < 0.5) 
+                    {
+                        matrix[i][j] = 1;
+                    }
+                    else if (j == i+1) 
+                    {
+                        matrix[i][j] = 1;
+                    }
+                    else if (i > numComponents - 3 && j > i)
                     {
                         matrix[i][j] = 1;
                     }
@@ -903,8 +768,7 @@ class serviceGenerator {
             }
         }
         
-        //Save the connection matrix in a file.
-        fs.writeFile('./newUsecase/componentsConnections.json', JSON.stringify(matrix), (err) => {
+        fs.writeFile(`./${configurations['scale']}/componentsConnections.json`, JSON.stringify(matrix), (err) => {
                 if (err) 
                 {
                     console.error('Error writing file:', err);
@@ -1324,4 +1188,5 @@ else if (configurations['type'] == 'optConfig')
 {
     cmd.optConfigCommand();
 }
+
 
