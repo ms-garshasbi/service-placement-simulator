@@ -360,7 +360,7 @@ class solutionOperation {
                         if (this.infraConnections[cn_id][cnd_id][0] != 0)
                         {
                             const bw = this.infraConnections[cn_id][cnd_id][0]/conn[cn_id][cnd_id];
-                            cT = cT + (ds/bw + this.infraConnections[cn_id][cnd_id][1]/20) // datasize/bandwidth + RTT/2
+                            cT = cT + (ds/bw + this.infraConnections[cn_id][cnd_id]) // datasize/bandwidth
                         }     
                     }
                 }
@@ -1941,3 +1941,4 @@ module.exports = {
     //Tuning
     fineTuning,
 }
+
