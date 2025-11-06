@@ -1,5 +1,14 @@
 # Edge-to-Cloud Service Placement Simulator
-This project simulates a three-tier edge-to-cloud infrastructure and provides different solvers for the placement of AR/VR services in edge-to-cloud AR/VR systems. The simulator follows a server-client architecture, where the client-side entity sends infrastructure and service characteristics in JSON format to the server-side. On the server, the service placement is executed based on the configurations and algorithm determined by the client. Then, the results, such as total response time and system reliability, are sent back by the server to the client.
+This project simulates a three-tier edge-to-cloud infrastructure and provides different solvers for the placement of AR/VR services in edge-to-cloud AR/VR systems. The simulator follows a server-client architecture, where the client-side entity sends infrastructure and service characteristics in JSON format to the server-side. On the server, the service placement is executed based on the configurations and algorithm determined by the client. Then, the results, such as total response time and system reliability, are sent back by the server to the client. 
+
+This repository contains two types of simulations:
+
+#### 1. Hybrid-Metaheuristic
+The **`hybrid-metaheuristic`** folder includes the simulations related to the following paper:  
+[An Efficient Hybrid Metaheuristic for Fault-Tolerant Edge–Cloud Service Placement](https://ieeexplore.ieee.org/document/11142744)
+
+#### 2. NCO-GA
+The **`NCO-GA`** folder implements a **lightweight learning-based approach (SNN-GA)** for the **online placement of services** in edge-to-cloud computing environments.
 
 ### Prerequisites
 To run the simulator, you need to install certain dependencies. This repository includes implementations of heuristics, metaheuristics, hyper-metaheuristics, and an NCO-based approach. The `Hybrid-metaheuristic` folder contains all implementations, including six heuristics, GA, PSO, PSO-GA, and GA-PSO. The `NCO-GA` folder includes an additional approach to solve the service placement problem, called NCO-GA. In each folder, there are two folders: one designed to run on the server-side and the other on the client-side. To execute the server-side simulator, install Node.js on the server machine (preferably Ubuntu), navigate to the project directory, and install the following dependencies.
