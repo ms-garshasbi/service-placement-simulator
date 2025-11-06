@@ -5,8 +5,8 @@ This repository contains two types of simulations:
 
 #### 1. Hybrid-Metaheuristic
 The **`hybrid-metaheuristic`** folder includes the simulations related to the following papers:  
-[An Efficient Hybrid Metaheuristic for Fault-Tolerant Edge–Cloud Service Placement](https://ieeexplore.ieee.org/document/11142744)
-[Optimizing Service Placement in Edge-to-Cloud AR/VR Systems using a Multi-Objective Genetic Algorithm](https://www.scitepress.org/publishedPapers/2024/127152/pdf/index.html)
+- [E-PSOGA: An Enhanced Hybrid Metaheuristic for Optimal Edge-to-Cloud Placement of Services With Multi-Version Components](https://ieeexplore.ieee.org/document/11142744)
+- [Optimizing Service Placement in Edge-to-Cloud AR/VR Systems using a Multi-Objective Genetic Algorithm](https://www.scitepress.org/publishedPapers/2024/127152/pdf/index.html)
 
 #### 2. NCO-GA
 The **`NCO-GA`** folder implements a **lightweight learning-based approach (SNN-GA)** for the **online placement of services** in edge-to-cloud computing environments.
