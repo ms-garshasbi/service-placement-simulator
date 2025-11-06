@@ -9,7 +9,7 @@ The **`hybrid-metaheuristic`** folder includes the simulations related to the fo
 - [Optimizing Service Placement in Edge-to-Cloud AR/VR Systems using a Multi-Objective Genetic Algorithm](https://www.scitepress.org/publishedPapers/2024/127152/pdf/index.html)
 
 #### 2. NCO-GA
-The **`NCO-GA`** folder implements a **lightweight learning-based approach (SNN-GA)** for the **online placement of services** in edge-to-cloud computing environments.
+The **`NCO-GA`** folder implements a lightweight learning-based approach **(SNN-GA)** for the online placement of services in edge-to-cloud computing environments.
 
 ### Prerequisites
 To run the simulator, you need to install certain dependencies. This repository includes implementations of heuristics, metaheuristics, hyper-metaheuristics, and an NCO-based approach. The `Hybrid-metaheuristic` folder contains all implementations, including six heuristics, GA, PSO, PSO-GA, and GA-PSO. The `NCO-GA` folder includes an additional approach to solve the service placement problem, called NCO-GA. In each folder, there are two folders: one designed to run on the server-side and the other on the client-side. To execute the server-side simulator, install Node.js on the server machine (preferably Ubuntu), navigate to the project directory, and install the following dependencies.
