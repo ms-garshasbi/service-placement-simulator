@@ -1,5 +1,5 @@
 # Edge-to-Cloud Service Placement Simulator
-This project simulates a three-tier edge-to-cloud infrastructure and provides different solvers for the placement of AR/VR services in edge-to-cloud AR/VR systems. The simulator follows a server-client architecture, where the client-side entity sends infrastructure and service characteristics in JSON format to the server-side. On the server, the service placement is executed based on the configurations and algorithm determined by the client. Then, the results, such as total response time and system reliability, are sent back by the server to the client. 
+This project simulates a multitier edge-to-cloud infrastructure and provides multiple solvers for the placement of computationally intensive services (e.g., AR/VR) in edge-to-cloud systems. The simulator adopts a client-server architecture, in which the client-side entity transmits infrastructure and service characteristics, encoded in JSON format, to the server. On the server side, service placement is executed according to the configuration and algorithm specified by the client. The server then returns the results. 
 
 This repository contains two types of simulations:
 
