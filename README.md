@@ -7,7 +7,7 @@ The project includes the simulations related to the following papers:
 - [A Lightweight Learning-Based Approach for Online Edge-to-Cloud Service Placement](https://www.mdpi.com/2079-9292/15/1/65)
 
 ### Prerequisites
-To run the simulator, you need to install certain dependencies. This repository includes implementations of heuristics, metaheuristics, hyper-metaheuristics, and an NCO-based approach. The `Hybrid-metaheuristic` folder contains all implementations, including six heuristics, GA, PSO, PSO-GA, and GA-PSO. The `NCO-GA` folder includes an additional approach to solve the service placement problem, called NCO-GA. In each folder, there are two folders: one designed to run on the server-side and the other on the client-side. To execute the server-side simulator, install Node.js on the server machine (preferably Ubuntu), navigate to the project directory, and install the following dependencies.
+To run the simulator, you need to install certain dependencies. This repository includes implementations of heuristics, metaheuristics, hyper-metaheuristics, and an NCO-based approach. There are two folders: one designed to run on the server-side and the other on the client-side. To execute the server-side simulator, install Node.js on the server machine (preferably Ubuntu), navigate to the project directory, and install the following dependencies.
 
 ```bash
 npm init --yes
