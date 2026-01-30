@@ -1,4 +1,4 @@
-# Edge-to-Cloud Service Placement Simulator
+# Edge-to-Cloud Service Placement Simulator (ECSP-Sim)
 This project simulates a multitier edge-to-cloud infrastructure and provides multiple solvers for the placement of computationally intensive services (e.g., AR/VR) in edge-to-cloud systems. The simulator adopts a client-server architecture, in which the client-side entity transmits infrastructure and service characteristics, encoded in JSON format, to the server. On the server side, service placement is executed according to the configuration and algorithm specified by the client. The server then returns the results. 
 
 The project includes the simulations related to the following papers:  
