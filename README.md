@@ -2,9 +2,9 @@
 This project simulates a multitier edge-to-cloud infrastructure and provides multiple solvers for the placement of computationally intensive services (e.g., AR/VR) in edge-to-cloud systems. The simulator adopts a client-server architecture, in which the client-side entity transmits infrastructure and service characteristics, encoded in JSON format, to the server. On the server side, service placement is executed according to the configuration and algorithm specified by the client. The server then returns the results. 
 
 The project includes the simulations related to the following papers:  
+- [A Lightweight Learning-Based Approach for Online Edge-to-Cloud Service Placement](https://www.mdpi.com/2079-9292/15/1/65)
 - [E-PSOGA: An Enhanced Hybrid Metaheuristic for Optimal Edge-to-Cloud Placement of Services With Multi-Version Components](https://ieeexplore.ieee.org/document/11142744)
 - [Optimizing Service Placement in Edge-to-Cloud AR/VR Systems using a Multi-Objective Genetic Algorithm](https://www.scitepress.org/publishedPapers/2024/127152/pdf/index.html)
-- [A Lightweight Learning-Based Approach for Online Edge-to-Cloud Service Placement](https://www.mdpi.com/2079-9292/15/1/65)
 
 ### Prerequisites
 To run the simulator, you need to install certain dependencies. This repository includes implementations of heuristics, metaheuristics, hyper-metaheuristics, and an NCO-based approach. There are two folders: one designed to run on the server-side and the other on the client-side. To execute the server-side simulator, install Node.js on the server machine (preferably Ubuntu), navigate to the project directory, and install the following dependencies.
