@@ -1,12 +1,10 @@
 # Edge-Cloud Service Placement Simulator
 
-Edge-Cloud Service Placement Simulator (ECSP-Sim) is a client-server simulator for studying service placement in multi-tier edge-to-cloud environments. It models access-point, edge, cloud, helper, and user nodes and supports configurable infrastructure resources, network characteristics, service requirements, and placement algorithms. The client generates or loads a use case and sends it to the server in JSON format. The server executes the selected placement algorithm and returns the placement results, runtime, and per-service metrics.
+Edge-Cloud Service Placement Simulator (ECSP-Sim) is a client-server simulator for studying service placement in multi-tier edge-to-cloud environments. It models access-point, edge, cloud, helper, and user nodes and supports configurable infrastructure resources, network characteristics, service requirements, and placement algorithms. The client generates or loads a use case and sends it to the server in JSON format. The server executes the selected placement algorithm or algorithms and returns placement metrics, runtime, per-service metrics, and the final placement solution for each successful algorithm.
 
 ## Prerequisites
 
-Install Node.js and npm on both the client and server machines.
-
-Install the committed dependencies in each directory:
+Install Node.js and npm on both the client and server machines. Install the committed dependencies in each directory:
 
 ```bash
 cd server
@@ -20,13 +18,11 @@ cd client
 npm install
 ```
 
-`fs` and `perf_hooks` are built into Node.js and do not need to be installed separately.
+`fs`, `path`, and `perf_hooks` are built into Node.js and do not need to be installed separately.
 
 ## Configuration
 
-The simulator is controlled through `configurations.json`.
-
-A typical configuration begins with:
+The simulator is controlled through `configurations.json`. A typical configuration begins with:
 
 ```json
 {
@@ -34,11 +30,12 @@ A typical configuration begins with:
     "algo": "GA",
     "scale": "scale-1",
     "dataGeneration": false,
-    "numOfInstances": 1
+    "numOfInstances": 1,
+    "requestTimeoutMs": 1800000
 }
 ```
 
-The `type` property determines what the client does. Setting it to `new` generates a new use case from the values in `configurations.json`. Setting it to `current` loads the already generated use case from the selected `scale` directory and runs the selected placement algorithm or algorithms.
+Only two execution modes are supported. `"type": "new"` generates a new use case from the values in `configurations.json` and saves it in the selected `scale` directory `"type": "current"` loads a use case from the selected `scale` directory and runs the selected placement algorithm or algorithms. When `dataGeneration` is enabled, `current` mode instead starts a multi-instance experiment campaign in which a fresh use case is generated before every experiment, including the first one.
 
 The `algo` property can contain one algorithm:
 
@@ -52,7 +49,23 @@ or several algorithms:
 "algo": "GA,PSO,DE,SA,TCA,LRC,MDS,MP,LP,MR,NCOGA"
 ```
 
-The `scale` property identifies the directory used to save or load a use case. For example, `"scale": "scale-1"` uses the `./scale-1/` directory. The `useCase` section defines the number of users, helpers, access points, edge nodes, cloud nodes, service components, and service versions. It also defines the CPU, memory, disk, reliability, bandwidth, RTT, service data size, provider, and codec ranges used during scenario generation. Individual values are generated within the configured ranges.
+The `scale` property identifies the directory used to save or load a use case. For example, `"scale": "scale-1"` uses the `./scale-1/` directory. The `useCase` section defines the number of users, helpers, access points, edge nodes, cloud nodes, service components, and service versions. It also defines CPU, memory, disk, reliability, bandwidth, RTT, service data size, provider, and codec ranges used during scenario generation. Individual values are generated within the configured ranges.
+
+### Request Timeout
+
+`requestTimeoutMs` defines the maximum HTTP request duration in milliseconds:
+
+```json
+"requestTimeoutMs": 1800000
+```
+
+The value must be a positive integer. The server also supports the `REQUEST_TIMEOUT_MS` environment variable as its default when a request does not provide a timeout:
+
+```bash
+REQUEST_TIMEOUT_MS=3600000 node main-execution.js
+```
+
+The timeout prevents the HTTP client/server connection from waiting indefinitely. The placement solvers currently execute synchronously inside the Node.js process, so an HTTP timeout does not forcibly interrupt a CPU-bound solver that is already executing.
 
 ## Running the Simulator
 
@@ -87,25 +100,15 @@ Then run:
 node platform-simulator.js
 ```
 
-The simulator generates the infrastructure, users, helpers, services, and connection matrices and stores them in the selected `scale` directory. A generated use case normally contains:
-
-```text
-nodes.json
-helpers.json
-users.json
-services.json
-infraConnections.json
-componentsConnections.json
-```
-
-The `new` mode only creates the use case. It does not execute the placement algorithms.
+The simulator generates the infrastructure, users, helpers, services, and connection matrices and stores them in the selected `scale` directory. The `new` mode only creates the use case. It does not execute the placement algorithms.
 
 ### Run the Current Use Case
 
 After a use case has been generated, change:
 
 ```json
-"type": "current"
+"type": "current",
+"dataGeneration": false
 ```
 
 Select the desired algorithm:
@@ -120,18 +123,21 @@ Then run:
 node platform-simulator.js
 ```
 
-The client loads the current use case from the selected `scale` directory, sends it to the server, and the server executes the selected placement algorithm. Several algorithms can be selected at the same time so that they are evaluated on the same use case.
+The client loads the current use case from the selected `scale` directory, sends it to the server, and the server executes the selected placement algorithm or algorithms. Several algorithms can be selected at the same time so that they are evaluated on exactly the same use case.
+
+Before the request is sent, the client checks the loaded scenario for placement feasibility. If the existing `services.json` has no complete resource-feasible placement, the current implementation may repair service-version resource requirements and overwrite `services.json`. A repair is reported in the console.
 
 ## Generating Many Use Cases and Experiment Data
 
-The simulator can also generate data from many different use cases. This is useful when evaluating algorithms across multiple scenarios instead of relying on a single experiment.
-
-Enable data generation with:
+The simulator can generate and evaluate many independently generated use cases. This is useful for comparing algorithms across multiple scenarios rather than relying on a single experiment. Enable data generation with:
 
 ```json
-"type": "current",
-"dataGeneration": true,
-"numOfInstances": 10
+{
+    "type": "current",
+    "dataGeneration": true,
+    "numOfInstances": 10,
+    "requestTimeoutMs": 1800000
+}
 ```
 
 Then run:
@@ -140,26 +146,33 @@ Then run:
 node platform-simulator.js
 ```
 
-The simulator runs the current use case, saves the result, generates a new use case, runs the selected algorithm again, and repeats the process. Generated experiment files are stored in the selected `scale` directory. This mode can be used to create datasets for later analysis and to compare placement algorithms across many independently generated scenarios.
+Generated experiment files are stored in the selected `scale` directory. If a file with the same instance index already exists, the current implementation overwrites it.
 
 ## Algorithm Configuration
 
-The configuration file also contains the parameters for the metaheuristic algorithms. For example, GA can be configured using:
+The configuration file contains the parameters for the metaheuristic algorithms. For example, GA can be configured using:
 
 ```json
 "geneticAlgorithm": {
-    "iterations": 100,
-    "populationSize": 150,
+    "iterations": 200,
+    "populationSize": 200,
     "mutationRate": 0.01,
     "crossoverRate": 0.7,
-    "selectionPressure": 10,
-    "termination": 200
+    "selectionPressure": 20
 }
 ```
 
-## Results
+## Results and Failure Handling
 
-For each selected algorithm, the server returns the overall placement metrics, algorithm runtime, per-service analysis, final placement solution, etc. When multiple algorithms are selected, one result object is returned for each algorithm.
+For each selected algorithm, the server returns one algorithm record. A successful algorithm record contains:
+
+```text
+status = "success"
+overall placement metrics
+algorithm runtime
+per-service analysis
+final placement solution
+```
 
 ## Docker
 
