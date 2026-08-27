@@ -28,10 +28,10 @@ The simulator is controlled through `configurations.json`. A typical configurati
 {
     "type": "current",
     "algo": "GA",
-    "scale": "scale-1",
+    "scale": "scale",
     "dataGeneration": false,
     "numOfInstances": 1,
-    "requestTimeoutMs": 1800000
+    "startInstance": 0,
 }
 ```
 
