@@ -1,0 +1,259 @@
+{
+    "type": "current",
+    "algo": "GA",
+    "scale": "small-scale",
+    "dataGeneration": false,
+    "numOfInstances": 1,
+    "startInstance": 0,
+    "geneticAlgorithm": {
+        "iterations": 200,
+        "populationSize": 200,
+        "mutationRate": 0.01,
+        "crossoverRate": 0.7,
+        "selectionPressure": 20
+    },
+    "nsgaII": {
+        "populationSize": 60,
+        "iteration": 200,
+        "crossoverRate": 0.9,
+        "mutationRate": 0.05,
+        "tournamentSize": 2
+    },
+    "particleSwarmOptimization": {
+        "populationSize": 60,
+        "w": 0.3,
+        "c1": 1.5,
+        "c2": 1.5,
+        "iteration": 25
+    },
+    "differentialEvolution": {
+        "populationSize": 100,
+        "crossoverRate": 0.5,
+        "F": 0.2,
+        "iteration": 50
+    },
+    "simulatedAnnealing": {
+        "terminationValue": 1e-05,
+        "temperature": 100,
+        "alpha": 0.85,
+        "updatingRate": 0.01
+    },
+    "sineCosineAlgorithm": {
+        "populationSize": 60,
+        "iteration": 50,
+        "b": 2,
+        "switchingProbability": 0.5
+    },
+    "whaleOptimizationAlgorithm": {
+        "populationSize": 60,
+        "iteration": 50,
+        "a": 2,
+        "l": 1,
+        "b": 1,
+        "coefficient_A": 2,
+        "coefficient_C": 2,
+        "switchingProbability": 0.5
+    },
+    "greyWolfOptimizer": {
+        "populationSize": 60,
+        "iteration": 50,
+        "a": 2,
+        "coefficient_A": 2,
+        "coefficient_C": 2
+    },
+    "exactOptimization": {
+        "dominancePruning": true,
+        "warmStart": true
+    },
+    "nco": {
+        "modelIndex": 0,
+        "training": {
+            "scenarioCount": 10,
+            "datasetName": "training-set-1",
+            "regenerateScenarios": false,
+            "weightMin": 0,
+            "weightMax": 1,
+            "saveWeights": true,
+            "improvementTolerance": 1e-09,
+            "ga": {
+                "populationSize": 40,
+                "iterations": 60,
+                "mutationRate": 0.1,
+                "crossoverRate": 0.8,
+                "tournamentSize": 5,
+                "sigma": 0.08,
+                "patience": 15
+            },
+            "pso": {
+                "populationSize": 40,
+                "iterations": 60,
+                "w": 0.7,
+                "c1": 1.5,
+                "c2": 1.5,
+                "velocityScale": 0.2,
+                "patience": 15
+            },
+            "de": {
+                "populationSize": 40,
+                "iterations": 60,
+                "F": 0.7,
+                "crossoverRate": 0.8,
+                "patience": 15
+            },
+            "sa": {
+                "initialTemperature": 1,
+                "minimumTemperature": 0.0001,
+                "alpha": 0.95,
+                "mutationRate": 0.2,
+                "sigma": 0.08,
+                "maxIterations": 250,
+                "patience": 80
+            }
+        }
+    },
+    "useCase": {
+        "new": {
+            "numberOfUsers": 4,
+            "numberOfHelpers": 4,
+            "numberOfAccessPoints": 2,
+            "numberOfEdgeNodes": 3,
+            "numberOfCloudNodes": 2,
+            "numberOfServiceComponentsPerService": 4,
+            "numberOfServiceComponentsVersions": 3
+        },
+        "computingNodesConfig": {
+            "minAPCPUMIPS": 4000,
+            "maxAPCPUMIPS": 8000,
+            "minAPMemoryMB": 2048,
+            "maxAPMemoryMB": 4096,
+            "minAPDiskMB": 32768,
+            "maxAPDiskMB": 65536,
+            "minAPReliability": 0.98,
+            "maxAPReliability": 0.99,
+            "APplatform": [
+                "Linux-ARM64"
+            ],
+            "minENCPUMIPS": 10000,
+            "maxENCPUMIPS": 20000,
+            "minENMemoryMB": 8192,
+            "maxENMemoryMB": 16384,
+            "minENDiskMB": 131072,
+            "maxENDiskMB": 262144,
+            "minENReliability": 0.985,
+            "maxENReliability": 0.995,
+            "ENplatform": [
+                "Linux-ARM64",
+                "Linux-x86_64"
+            ],
+            "minCNCPUMIPS": 20000,
+            "maxCNCPUMIPS": 40000,
+            "minCNMemoryMB": 16384,
+            "maxCNMemoryMB": 32768,
+            "minCNDiskMB": 262144,
+            "maxCNDiskMB": 524288,
+            "minCNReliability": 0.995,
+            "maxCNReliability": 0.999,
+            "CNplatform": [
+                "Linux-x86_64",
+                "Linux-ARM64"
+            ],
+            "maxBandwidthInTier1": 1000,
+            "minBandwidthInTier1": 800,
+            "maxRttInTier1": 0.003,
+            "minRttInTier1": 0.001,
+            "maxBandwidthInTier2": 2500,
+            "minBandwidthInTier2": 1000,
+            "maxRttInTier2": 0.002,
+            "minRttInTier2": 0.001,
+            "maxBandwidthInTier3": 5000,
+            "minBandwidthInTier3": 2500,
+            "maxRttInTier3": 0.0015,
+            "minRttInTier3": 0.0005,
+            "maxBandwidthFromTier1ToTier2": 1000,
+            "minBandwidthFromTier1ToTier2": 500,
+            "maxRttFromTier1ToTier2": 0.005,
+            "minRttFromTier1ToTier2": 0.002,
+            "maxBandwidthFromTier1ToTier3": 800,
+            "minBandwidthFromTier1ToTier3": 200,
+            "maxRttFromTier1ToTier3": 0.03,
+            "minRttFromTier1ToTier3": 0.015,
+            "maxBandwidthFromTier2ToTier3": 2500,
+            "minBandwidthFromTier2ToTier3": 1000,
+            "maxRttFromTier2ToTier3": 0.02,
+            "minRttFromTier2ToTier3": 0.008,
+            "maxBandwidthFromUserToTier1": 300,
+            "minBandwidthFromUserToTier1": 100,
+            "maxRttFromUserToTier1": 0.008,
+            "minRttFromUserToTier1": 0.003,
+            "maxBandwidthFromUserToTier2": 200,
+            "minBandwidthFromUserToTier2": 50,
+            "maxRttFromUserToTier2": 0.015,
+            "minRttFromUserToTier2": 0.005,
+            "maxBandwidthFromUserToTier3": 100,
+            "minBandwidthFromUserToTier3": 20,
+            "maxRttFromUserToTier3": 0.04,
+            "minRttFromUserToTier3": 0.02,
+            "maxBandwidthFromHelperToInfrastructure": 500,
+            "minBandwidthFromHelperToInfrastructure": 100,
+            "maxRttFromHelperToInfrastructure": 0.012,
+            "minRttFromHelperToInfrastructure": 0.004,
+            "maxBandwidthFromUsersToHelpers": 200,
+            "minBandwidthFromUsersToHelpers": 50,
+            "maxRttFromHelperUsersToHelpers": 0.02,
+            "minRttFromHelperUsersToHelpers": 0.005
+        },
+        "helpersConfig": {
+            "minCPUMIPS": 6000,
+            "maxCPUMIPS": 12000,
+            "minMemoryMB": 8192,
+            "maxMemoryMB": 16384,
+            "minDiskMB": 65536,
+            "maxDiskMB": 131072,
+            "minReliability": 0.975,
+            "maxReliability": 0.99,
+            "os": [
+                "Linux-x86_64",
+                "Linux-ARM64"
+            ]
+        },
+        "usersConfig": {
+            "minCPUMIPS": 3000,
+            "maxCPUMIPS": 8000,
+            "minMemoryMB": 4096,
+            "maxMemoryMB": 8192,
+            "minDiskMB": 65536,
+            "maxDiskMB": 131072,
+            "minReliability": 0.97,
+            "maxReliability": 0.985,
+            "os": [
+                "Android-ARM64",
+                "Linux-ARM64"
+            ]
+        },
+        "serviceConfig": {
+            "capacityPercentage": 0.6,
+            "internalProvider": [
+                "K8s"
+            ],
+            "externalProvider": [
+                "AWS",
+                "Azure",
+                "Ericsson"
+            ],
+            "codecType": [
+                "H265",
+                "H264"
+            ],
+            "minReliability": 0.985,
+            "maxReliability": 0.998,
+            "minDataSize": 1,
+            "maxDataSize": 5,
+            "executionWorkloadSeconds": 0.25
+        }
+    },
+    "address": {
+        "ip": "localhost",
+        "port": "3001"
+    },
+    "requestTimeoutMs": 1800000
+}
