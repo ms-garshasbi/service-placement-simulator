@@ -85,9 +85,9 @@ The simulator currently supports:
 
 The client and server can be containerized with Node.js images. The server container should expose port `3001`, and the client must be configured with the reachable server address.
 
-## Minikube
+## Kubernetes
 
-The server can also be deployed to Minikube using the Kubernetes deployment and service YAML files included with the project:
+The server can also be deployed using the Kubernetes deployment and service YAML files included with the project:
 
 ```bash
 kubectl apply -f server-side-dep.yaml
