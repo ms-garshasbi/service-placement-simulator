@@ -82,10 +82,10 @@ select the desired algorithm(s), and run the client again. The current scenario 
 The simulator currently supports:
 
 - Heuristics: TCA, LRC, MDS, MP, LP, MR
-- Metaheuristics: GA, PSO, DE, SA, SCA, WOA, GWO, NSGAII. These are the enhanced (E-) variants, which repair every candidate solution with the healing operator. The basic (B-) variants are not included.
-- NCO-Based Methods: NCOGA, NCOPSO, NCODE, NCOSA
-- Other Optimization Methods: `OPT` — exact branch-and-bound optimization baseline
-- Fault Tolerance: FLGA, FLPSO, FLDE, FLWOA, FLSA, FLPSOGA, FLGAPSO, FLRAS, FLUDL, FLTCA, FLRecTime, FLRelScore, FLExeTime, FLResTime (see [Fault Tolerance](#fault-tolerance))
+- Metaheuristics: GA, PSO, DE, SA, SCA, WOA, GWO, NSGAII. These are the enhanced (E-) variants, which repair every candidate solution with the healing operator.
+- NCO-Based Methods: NCOGA (SNN-GA), NCOPSO, NCODE, NCOSA
+- Other Optimisation Methods: `OPT` — exact branch-and-bound optimisation baseline
+- Fault Tolerance: FLGA, FLPSO, FLDE, FLWOA, FLSA, FLPSOGA, FLGAPSO, FLRAS, FLUDL (EES-CND), FLTCA, FLRecTime, FLRelScore, FLExeTime, FLResTime.
 
 ## Fault Tolerance
 
@@ -93,36 +93,15 @@ The fault-tolerance algorithms (`FL*`) study how a placement recovers from failu
 
 1. Computes an initial placement with a pretrained NCO model.
 2. For each of `faultTolerance.timeSlots` time slots, simulates node (hardware) failures and component (software) failures.
-3. Recovers the affected components with the selected strategy and records response time, overall reliability (platform × service reliability), and recovery time.
-
-| Algorithm | Recovery strategy |
-|---|---|
-| FLGA, FLPSO, FLDE, FLWOA, FLSA | Metaheuristic recovery (GA, PSO, DE, WOA, population-based SA) |
-| FLPSOGA, FLGAPSO, FLRAS | Hybrid recovery: PSO followed by GA (FLPSOGA), GA followed by PSO (FLGAPSO), and random algorithm selection, where each iteration applies a randomly chosen GA, PSO, DE or WOA operator (FLRAS) |
-| FLUDL | Learning-based recovery: an ensemble of pretrained models, optionally updated online |
-| FLTCA, FLRecTime, FLRelScore, FLExeTime, FLResTime | Heuristic recovery (task-continuation affinity, recovery time, reliability score, execution time, response time) |
+3. Recovers the affected components with the selected strategy and records response time, overall reliability, and recovery time.
 
 Run them like any other algorithm, e.g. `"algo": "FLGA,FLUDL,FLTCA"`. They are configured in the `faultTolerance` section of `configurations.json`:
 
-```json
-"faultTolerance": {
-    "timeSlots": 500,
-    "geneticAlgorithm": { "populationSize": 10, "iterations": 3, "mutationRate": 0.05, "crossoverRate": 0.7, "selectionPressure": 2 },
-    "particleSwarmOptimization": { "populationSize": 5, "iteration": 3, "w": 0.5, "c1": 1.5, "c2": 1.5 },
-    "differentialEvolution": { "populationSize": 6, "iteration": 5, "crossoverRate": 0.7, "F": 0.85 },
-    "whaleOptimizationAlgorithm": { "populationSize": 6, "iteration": 5, "a": 0.5, "b": 0.2, "l": 2, "coefficient_A": 2, "coefficient_C": 2 },
-    "simulatedAnnealing": { "populationSize": 2, "temperature": 10, "alpha": 0.8, "updatingRate": 0.05, "terminationValue": 0.01, "selectionPressure": 4 },
-    "udl": { "numModels": 6, "drift": true, "updatingMethod": "bp" }
-}
-```
-
 - `timeSlots`: number of failure time slots simulated after the initial placement.
-- The metaheuristic settings are used for the recovery search in every time slot. They are separate from the placement settings above and are intentionally small, because the search runs once per time slot.
-- `udl.numModels`: number of pretrained models in the FLUDL ensemble (1–6).
+- The metaheuristic settings are used for the recovery search in every time slot.
+- `udl.numModels`: number of pretrained models in the EES-CND ensemble (1–6).
 - `udl.drift`: whether the system characteristics drift over time.
 - `udl.updatingMethod`: how the models are updated online: `no` (no update), `bp` (backpropagation), `es` (evolution strategy), or `ees` (enhanced evolution strategy).
-
-Service versions carry two fields that the recovery-time model uses: `imageSize` and `installingTime`. They are generated from `useCase.serviceConfig` (`imageSize`, `minInstallingTime`, `maxInstallingTime`; defaults 1, 2 and 5 seconds). Use cases generated before these fields existed must be regenerated before running the `FL*` algorithms.
 
 **Capacity.** The NCO-based initial placement and recovery place each component only on a computing node with enough free memory, so they need more spare capacity than the placement solvers. Generate fault-tolerance use cases with a lower `useCase.serviceConfig.capacityPercentage` (around `0.2`–`0.3`) and more computing nodes than users. If capacity runs out, the run stops with an error that says so.
 
