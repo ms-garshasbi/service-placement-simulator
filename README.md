@@ -75,17 +75,7 @@ select the desired algorithm(s), and run the client again. The current scenario 
 
 ### Example Instances
 
-`client/Example-instances/` contains ready-made use cases of five sizes. Each has a `-train` twin of the same size, for example for training NCO models.
-
-| Instance | Services (users) | Helpers | Access points / edge / cloud nodes | Components per service | Versions per component |
-|---|---|---|---|---|---|
-| `instance-3` | 30 | 15 | 15 / 8 / 4 | 6 | 5 |
-| `instance-2` | 60 | 30 | 30 / 15 / 8 | 6 | 6 |
-| `instance-1` | 120 | 60 | 60 / 30 / 16 | 6 | 7 |
-| `instance-4` | 250 | 120 | 125 / 62 / 32 | 6 | 8 |
-| `instance-5` | 500 | 250 | 250 / 125 / 64 | 6 | 9 |
-
-To run one, set `"type": "current"` and, for example, `"scale": "Example-instances/instance-3"`. They were generated with the default settings (`capacityPercentage` 0.6), so the fault-tolerance algorithms need a use case generated with lower capacity (see [Fault Tolerance](#fault-tolerance)).
+`instances.zip` contains ready-made use cases of five sizes. To run one, set `"type": "current"` and, for example, `"scale": "Example-instances/instance-3"`. They were generated with the default settings (`capacityPercentage` 0.6), so the fault-tolerance algorithms need a use case generated with lower capacity (see [Fault Tolerance](#fault-tolerance)).
 
 ## Supported Algorithms
 
