@@ -103,18 +103,6 @@ Run them like any other algorithm, e.g. `"algo": "FLGA,FLUDL,FLTCA"`. They are c
 - `udl.drift`: whether the system characteristics drift over time.
 - `udl.updatingMethod`: how the models are updated online: `no` (no update), `bp` (backpropagation), `es` (evolution strategy), or `ees` (enhanced evolution strategy).
 
-**Capacity.** The NCO-based initial placement and recovery place each component only on a computing node with enough free memory, so they need more spare capacity than the placement solvers. Generate fault-tolerance use cases with a lower `useCase.serviceConfig.capacityPercentage` (around `0.2`–`0.3`) and more computing nodes than users. If capacity runs out, the run stops with an error that says so.
-
-**Models.** Pretrained models are in `server/fault-tolerance-models/`: `initial-placement-weights.txt` (initial NCO placement) and `udl/weights_0.txt` … `udl/weights_5.txt` (FLUDL ensemble).
-
-**Outputs.** Besides the summary returned to the client (initial vs. after-failure response time, reliability, and recovery time), the server writes:
-
-- `server/results/fault-tolerance/<algorithm>-overtime.csv`: one row per time slot.
-- `server/results/fault-tolerance/per-service/`: per-service response time, reliability, and recovery time.
-- `server/results/fault-tolerance/udl-models/`: FLUDL models after online updating.
-
-The fault-tolerance code lives in `server/fault-tolerance.js` and is self-contained (it does not depend on `solvers.js`).
-
 ## Docker
 
 The client and server can be containerised with Node.js images. The server container should expose port `3001`, and the client must be configured with the reachable server address.
