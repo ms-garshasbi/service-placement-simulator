@@ -75,7 +75,7 @@ select the desired algorithm(s), and run the client again. The current scenario 
 
 ### Example Instances
 
-`instances.zip` contains ready-made use cases of five sizes. To run one, set `"type": "current"` and, for example, `"scale": "Example-instances/instance-3"`. They were generated with the default settings (`capacityPercentage` 0.6), so the fault-tolerance algorithms need a use case generated with lower capacity (see [Fault Tolerance](#fault-tolerance)).
+`instances.zip` contains ready-made use cases of five sizes. To run one, set `"type": "current"` and, for example, `"scale": "Example-instances/instance-3"`.
 
 ## Supported Algorithms
 
